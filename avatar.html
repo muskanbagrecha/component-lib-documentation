@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking CSS -->
+
+    <!--Component Library-->
+    <link class="themestyle" rel="stylesheet" href="https://alert-avatar.netlify.app/darktheme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+</head>
+
+<body>
+    <div class="documentation__container">
+
+        <header class="primary-header">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+                <i class="fa fa-moon theme-icon"></i>
+            </nav>
+        </header>
+
+        <div class="documentation__navigation">
+            <ul class="documentation__navigation__list">
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="#">Avatar</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="">Card</a></li>
+            </ul>
+        </div>
+        <div class="documentation__content">
+            <section class="component">
+                <h1 class="large-title" style="text-align: initial;">Avatar</h1>
+                <div class="component__desc">
+                    <p>Avatars are one of the most important components as they can be used to show
+                        a user's <span class="highlight">profile picture.</span></p>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Image Avatar</h3>
+                    <p class="variant__desc">You can use image avatar by adding <span
+                            class="highlight">avatar-image</span> class to existing classes. A total of 5 sizes are
+                        available: <span class="highlight"> xl, l, m, s, xs.</span> To use the different variants
+                        add class avatar followed by size. Example: <span class="highlight"> avatar-xl. </span></p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-xl">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-l">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-m">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-s">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 242px; border:0; transform: scale(1); overflow:hidden; margin-bottom: 0;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Text Avatar</h3>
+                    <p class="variant__desc">You can use text avatar by adding class <span
+                            class="highlight">avatar-text.</span> A total of 5 sizes are
+                        available: <span class="highlight"> xl, l, m, s, xs.</span></p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-xl avatar-text">MB</div>
+                        <div class="avatar avatar-l avatar-text">MB</div>
+                        <div class="avatar avatar-m avatar-text">MB</div>
+                        <div class="avatar avatar-s avatar-text">MB</div>
+                        <div class="avatar avatar-xs avatar-text">MB</div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EMB%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Squared Avatar</h3>
+                    <p class="variant__desc">You can use squared avatar by adding class <span
+                            class="highlight">avatar-squared.</span> Do not forget to specify the size and type of
+                        avatar.</p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-l avatar-squared">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-l avatar-text avatar-squared">MB</div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21---%2520Text%2520avatar%2520of%2520size%2520large%2520and%2520shape%2520square.%2520---%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2520avatar-squared%2522%253EMB%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Shadowed Avatar</h3>
+                    <p class="variant__desc">You can use shadowed avatar by adding class <span
+                            class="highlight">avatar-shadow.</span> Do not forget to specify the size and type of avatar.</p>
+                    <div class="component__container-borderless avatar__container">
+                        <div class="avatar avatar-l avatar-text avatar-squared avatar-shadow">MB</div>
+                        <div class="avatar avatar-m avatar-text avatar-squared avatar-shadow">MB</div>
+                    </div>
+
+                    <div class="code">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="documentation__footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="theme.js"></script>
+    <script>
+        const elements = document.querySelectorAll(".alert-dismissable");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener("click", (e) => {
+                if (e.target.classList.contains("fa-close")) {
+                    e.target.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

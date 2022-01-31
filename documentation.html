@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking CSS -->
+
+    <!--Component Library-->
+    <link class="themestyle" rel="stylesheet" href="https://alert-avatar.netlify.app/darktheme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+</head>
+
+<body>
+    <div class="documentation__container">
+
+        <header class="primary-header">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+                <i class="fa fa-moon theme-icon"></i>
+            </nav>
+        </header>
+
+        <div class="documentation__navigation">
+            <ul class="documentation__navigation__list">
+                <li><a href="">Alert</a></li>
+                <li><a href="">Avatar</a></li>
+                <li><a href="">Button</a></li>
+                <li><a href="">Card</a></li>
+            </ul>
+        </div>
+        <div class="documentation__content">
+            <section class="component">
+                <h2 class="component__title">Alerts</h2>
+                <div class="component__desc">
+                    <p>Alerts are used to <span class="highlight">notify the user of an important event or
+                            action.</span> It can prompt users to take a specific action and can also be dismissed.
+                    </p>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Alerts without action</h3>
+                    <p class="variant__desc">Alerts can be created using the <span class="highlight">alert</span> class.
+                        There are 6 variants available for alerts. The variants include: <span
+                            class="highlight">success, danger, warning, info, secondary, themed, outlined.</span></p>
+                    <div class="component__container">
+                        <div class="alert alert-success">
+                            <span><i class="fas fa-check-circle"></i></span>
+                            This is a success alert!
+                        </div>
+                        <div class="alert alert-danger">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is a dangerous alert!
+                        </div>
+                        <div class="alert alert-warning">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is a warning!
+                        </div>
+                        <div class="alert alert-info">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is an informative alert!
+                        </div>
+                        <div class="alert alert-themed">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is a themed alert!
+                        </div>
+                        <div class="alert alert-secondary">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is a secondary alert!
+                        </div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520dangerous%2520alert%21%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520warning%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520an%2520informative%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-themed%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520themed%2520alert%21%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520This%2520is%2520secondary%2520alert%21%21%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">
+                        Alerts with close button
+                    </h3>
+                    <p class="component__desc">Alerts can be dismissed by clicking on the <span class=highlight>close
+                            button.</span> Just add
+                        class <span class="highlight">alert-dismissable</span> to activate this functionality.</p>
+                    <div class="component__container-borderless">
+                        <div class="alert alert-success alert-dismissable">
+                            <span><i class="fas fa-check-circle"></i></span>
+                            This is a success alert!
+                            <i class="icon-close fa fa-close"></i>
+                        </div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2520alert-dismissable%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%21%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522icon-close%2520fa%2520fa-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=javascript&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Javascript%2520*%252F%250Adocument.querySelector%28%2522.alert-dismissable%2522%29.addEventListener%28%2522click%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28e.target.classList.contains%28%2522fa-close%2522%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520e.target.parentElement.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%29%253B"
+                            style="width: 1200px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">
+                        Outlined Alerts
+                    </h3>
+                    <p class="variant__desc">You can use outlined variants by adding <span
+                            class="highlight">alert-outlined</span> class to existing classes.</span>
+                    </p>
+                    <div class="component__container-borderless">
+                        <div class="alert alert-themed alert-outlined alert-dismissable">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is an outlined themed alert!
+                            <i class="icon-close fa fa-close"></i>
+                        </div>
+                        <div class="alert alert-info alert-outlined">
+                            <span><i class="fas fa-exclamation-triangle"></i></span>
+                            This is an outlined alert!
+                        </div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-themed%2520alert-outlined%2520alert-dismissable%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520This%2520is%2520an%2520outlined%2520danger%2520alert%21%250A%2509%2520%253Ci%2520class%253D%2522icon-close%2520fa%2520fa-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2520alert-outlined%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520This%2520is%2520an%2520outlined%2520alert%21%250A%2520%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 242px; border:0; transform: scale(1); overflow:hidden; margin-bottom: 0;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="component">
+                <h2 class="component__title">Avatar</h2>
+                <div class="component__desc">
+                    <p>Avatars are one of the most important components as they can be used to show
+                        a user's <span class="highlight">profile picture.</span></p>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Image Avatar</h3>
+                    <p class="variant__desc">You can use image avatar by adding <span
+                            class="highlight">avatar-image</span> class to existing classes. A total of 5 sizes are
+                        available: <span class="highlight"> xl, l, m, s, xs.</span> To use the different variants
+                        add class avatar followed by size. Example: <span class="highlight"> avatar-xl. </span></p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-xl">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-l">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-m">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-s">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-xs">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522assets%252Favatar1.png%2522%2520alt%253D%2522avatar-img%2522%2520class%253D%2522img-responsive%2520img-rounded%2522%253E%250A%253C%252Fdiv%253E"
+                            style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden; margin-bottom: 0;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Text Avatar</h3>
+                    <p class="variant__desc">You can use text avatar by adding class <span
+                            class="highlight">avatar-text.</span> A total of 5 sizes are
+                        available: <span class="highlight"> xl, l, m, s, xs.</span></p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-xl avatar-text">MB</div>
+                        <div class="avatar avatar-l avatar-text">MB</div>
+                        <div class="avatar avatar-m avatar-text">MB</div>
+                        <div class="avatar avatar-s avatar-text">MB</div>
+                        <div class="avatar avatar-xs avatar-text">MB</div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EMB%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Squared Avatar</h3>
+                    <p class="variant__desc">You can use squared avatar by adding class <span
+                            class="highlight">avatar-squared.</span> Do not forget to specify the size and type of
+                        avatar.</p>
+                    <div class="component__container avatar__container">
+                        <div class="avatar avatar-l avatar-squared">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        </div>
+                        <div class="avatar avatar-l avatar-text avatar-squared">MB</div>
+                    </div>
+                    <div class="code">
+                        <iframe
+                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21---%2520Text%2520avatar%2520of%2520size%2520large%2520and%2520shape%2520square.%2520---%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2520avatar-squared%2522%253EMB%253C%252Fdiv%253E"
+                            style="width: 1200px; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                            sandbox="allow-scripts allow-same-origin">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Shadowed Avatar</h3>
+                    <p class="variant__desc">You can use shadowed avatar by adding class <span
+                            class="highlight">avatar-shadow.</span> Do not forget to specify the size and type of avatar.</p>
+                    <div class="component__container-borderless avatar__container">
+                        <div class="avatar avatar-l avatar-text avatar-squared avatar-shadow">MB</div>
+                        <div class="avatar avatar-m avatar-text avatar-squared avatar-shadow">MB</div>
+                    </div>
+
+                    <div class="code">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="theme.js"></script>
+    <script>
+        const elements = document.querySelectorAll(".alert-dismissable");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener("click", (e) => {
+                if (e.target.classList.contains("fa-close")) {
+                    e.target.parentElement.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
