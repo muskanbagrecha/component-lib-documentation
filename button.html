@@ -15,8 +15,7 @@
     <!-- Linking CSS -->
 
     <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://alert-avatar.netlify.app/darktheme.css">
-
+    <link class="themestyle" rel="stylesheet" href="https://badge-button.netlify.app/darktheme.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 
@@ -27,7 +26,7 @@
 <body>
     <div class="documentation__container">
 
-        <header class="primary-header">
+        <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
@@ -42,6 +41,7 @@
             <ul class="documentation__navigation__list">
                 <li><a href="alert.html">Alert</a></li>
                 <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
                 <li><a href="#">Button</a></li>
                 <li><a href="">Card</a></li>
             </ul>
@@ -51,70 +51,141 @@
                 <h1 class="large-title" style="text-align: initial;">Button</h1>
                 <div class="component__desc">
                     <p>
-                        The button component can be used to <span class="highlight"> trigger an action. </span> This component library supports multiple variants of buttons which can be customized easily. 
+                        The button component can be used to <span class="highlight"> trigger an action. </span> This
+                        component library supports multiple variants of buttons which can be customized easily.
                     </p>
                 </div>
                 <div class="component__variant">
                     <h3 class="component__variant__title">Primary Buttons</h3>
-                    <p class="variant__desc">You can use primary buttons by adding class <span
-                            class="highlight">btn. </span> The different variants are as follows: </p>
-                    <div class="component__container">
+                    <p class="variant__desc">You can use primary buttons by adding class <span class="highlight">btn.
+                        </span> You may use the button element or anchor tag (with text or icon). </p>
+                    <div class="component__container button__container">
+                        <button class="btn btn-primary">Click me</button>
+                        <button class="btn btn-primary"><i class="icon fas fa-shopping-cart"></i>Add to cart</button>
+                        <button class="btn btn-outline"><i class="icon fas fa-heart"></i>Wishlist</button>
+                        <a class="btn-link-text">Primary-Text</a>
                     </div>
-                    <div class="code">
-                    </div>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Text Avatar</h3>
-                    <p class="variant__desc">You can use text avatar by adding class <span
-                            class="highlight">avatar-text.</span> A total of 5 sizes are
-                        available: <span class="highlight"> xl, l, m, s, xs.</span></p>
-                    <div class="component__container avatar__container">
-                        <div class="avatar avatar-xl avatar-text">MB</div>
-                        <div class="avatar avatar-l avatar-text">MB</div>
-                        <div class="avatar avatar-m avatar-text">MB</div>
-                        <div class="avatar avatar-s avatar-text">MB</div>
-                        <div class="avatar avatar-xs avatar-text">MB</div>
-                    </div>
-                    <div class="code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-xl%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-m%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-s%2520avatar-text%2522%253EMB%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-xs%2520avatar-text%2522%253EMB%253C%252Fdiv%253E"
-                            style="width: 1200px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-
-                    </div>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Squared Avatar</h3>
-                    <p class="variant__desc">You can use squared avatar by adding class <span
-                            class="highlight">avatar-squared.</span> Do not forget to specify the size and type of
-                        avatar.</p>
-                    <div class="component__container avatar__container">
-                        <div class="avatar avatar-l avatar-squared">
-                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/Y359mdF2T7Uqj5SgFFTS"
+                                style="width: 100%; height: 210px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
                         </div>
-                        <div class="avatar avatar-l avatar-text avatar-squared">MB</div>
-                    </div>
-                    <div class="code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21---%2520Text%2520avatar%2520of%2520size%2520large%2520and%2520shape%2520square.%2520---%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-l%2520avatar-text%2520avatar-squared%2522%253EMB%253C%252Fdiv%253E"
-                            style="width: 1200px; height: 111px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
                     </div>
                 </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Shadowed Avatar</h3>
-                    <p class="variant__desc">You can use shadowed avatar by adding class <span
-                            class="highlight">avatar-shadow.</span> Do not forget to specify the size and type of avatar.</p>
-                    <div class="component__container-borderless avatar__container">
-                        <div class="avatar avatar-l avatar-text avatar-squared avatar-shadow">MB</div>
-                        <div class="avatar avatar-m avatar-text avatar-squared avatar-shadow">MB</div>
-                    </div>
 
-                    <div class="code">
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Primary Buttons With Icons</h3>
+                    <p class="variant__desc">You can use <span class="highlight">icons</span> as primary buttons. </p>
+                    <div class="component__container button__container">
+                        <button class="btn btn-outline"><i class="icon fas fa-shopping-cart"></i>Buy now</button>
+                        <i class="btn-icon fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/wXMBuJMaJn5u1EHKLByt"
+                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Secondary Buttons</h3>
+                    <p class="variant__desc">You can also use secondary buttons by adding class <span
+                            class="highlight">btn-secondary.</span></p>
+                    <div class="component__container button__container">
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-secondary-outline">Privacy Agreement</button>
+                        <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/fANeTo4NGvShsu6mNptl"
+                                style="width: 544px; height: 130px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">
+                        Different Sizes
+                    </h3>
+                    <p class="variant__desc">Depending on the use-case, you can select a small or a large button. Use
+                        <span class="highlight">btn-small and .btn-large</span> to change the size.</p>
+                    <div class="component__container button__container">
+                        <button class="btn btn-outline btn-small">Small</button>
+                        <button class="btn btn-outline btn-large">Large</button>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/Fh1zbLuEvAqMzPyuifH9"
+                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">
+                        Floating Action Buttons
+                    </h3>
+                    <p class="variant__desc">Floating buttons can be used to promote an <span
+                            class="highlight">important action </span>such as creating or sharing something. They are
+                        mostly used for <span class="highlight">positive actions</span> like adding something to
+                        wishlist.
+                        <ul>
+                            <li>Note that buttons can float against the parent container or the viewport. For static
+                                position, use class <span class="highlight">btn-floating.</span></li>
+                            <li>For floating with respect to the parent container, add one more class which specifies
+                                the position: <span class="highlight">top-left, top-right, bottom-left,
+                                    bottom-right.</span></li>
+                            <li>For floating button with respect to viewport, add class <span
+                                    class="highlight">float-on-screen.</span> For example, the button on bottom right of the screen.</li>
+                            <li>Position can be customized by overriding the positions specified in the respective
+                                class.</li>
+                        </ul>
+                    </p>
+                    <div class="component__container button__container">
+                        <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button></button>
+                        <button class="btn-floating"><i class="fas fa-plus"></i></button></button>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/Fh1zbLuEvAqMzPyuifH9"
+                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Disabled Button</h3>
+                    <p class="variant__desc">You can disable buttons by adding class <span
+                            class="highlight">btn-disabled.</span></p>
+                    <div class="component__container button__container">
+                        <button class="btn btn-primary btn-disabled">Create account</button>
+                        <button class="btn btn-outline btn-disabled">Place order</button>
+                        <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/3Qu9Tmma2BjXmP5N70WV"
+                                style="width: 100%; height: 113px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
         <footer class="documentation__footer">
@@ -127,18 +198,13 @@
             </ul>
         </footer>
     </div>
+
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="theme.js"></script>
-    <script>
-        const elements = document.querySelectorAll(".alert-dismissable");
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", (e) => {
-                if (e.target.classList.contains("fa-close")) {
-                    e.target.parentElement.style.display = "none";
-                }
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

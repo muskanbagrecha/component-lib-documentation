@@ -10,6 +10,13 @@ html {
     position: relative;
 }
 
+.flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
 .primary-header {
     background-color: rgba(var(--color-complementary-values), 0.1);
     padding: 0;
@@ -17,6 +24,7 @@ html {
     width: 100%;
     min-width: 40rem;
     grid-area: nav;
+    position: relative;
 }
 
 .navbar {
@@ -42,8 +50,9 @@ html {
 }
 
 .tab-underline-indicator>* {
-    padding: var(--spacing-large) 0;
+    padding: var(--spacing-medium) 0;
 }
+
 
 .tab-underline-indicator>*:hover,
 .tab-underline-indicator>*:focus {
@@ -93,13 +102,6 @@ html {
     color: var(--color-complementary);
 }
 
-.btn-link-text {
-    cursor: pointer;
-    color: var(--color-complementary);
-    padding-bottom: var(--spacing-xsmall);
-    border-bottom: 1px solid var(--primary-color);
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -110,7 +112,7 @@ footer {
     color: var(--color-complementary);
 }
 
-.home__footer{
+.home__footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -170,7 +172,7 @@ footer {
 
 .documentation__navigation {
     grid-area: sidebar;
-    background-color: rgba(var(--color-primary-values),0.2);
+    background-color: rgba(var(--color-primary-values), 0.2);
 }
 
 .documentation__navigation__list {
@@ -198,7 +200,7 @@ footer {
     color: var(--color-primary);
 }
 
-.documentation__footer{
+.documentation__footer {
     grid-area: footer;
 }
 
@@ -240,18 +242,19 @@ footer {
     height: 100%;
 }
 
-code {
+.code__wrapper {
+    overflow-x: auto;
+    background: rgba(var(--color-primary-values), 0.2);
+    text-align: center;
     width: 100%;
+    padding: 2rem;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--bradius-small);
 }
 
-.code>* {
-    width: 100%;
-}
-
-/* iframe{
-    position: absolute;
-    height: 100vh;
-    width: 100%;
+/* .iframe__code{
+    margin: 0;
+    padding: 0;
 } */
 
 
@@ -262,17 +265,24 @@ code {
     margin-top: 2rem;
     margin-bottom: 2rem;
     border: 2px solid rgba(156, 163, 175, 0.5);
+    /* border: 2px solid var(--color-primary); */
     border-radius: var(--bradius-small);
 }
 
-.avatar__container {
-    display: flex;
-    align-items: flex-end;
+.button__container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
 
 .component__container-borderless {
     border: none;
     padding-inline: 0;
+}
+
+.btn-floating.doc-float{
+    right: 1rem;
+    bottom: 2rem;
 }
 
 @media screen and (max-width: 60rem) {

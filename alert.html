@@ -15,7 +15,7 @@
     <!-- Linking CSS -->
 
     <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://alert-avatar.netlify.app/darktheme.css">
+    <link class="themestyle" rel="stylesheet" href="https://badge-button.netlify.app/darktheme.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -27,7 +27,7 @@
 <body>
     <div class="documentation__container">
 
-        <header class="primary-header">
+        <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
@@ -42,11 +42,12 @@
             <ul class="documentation__navigation__list">
                 <li><a href="#">Alert</a></li>
                 <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
                 <li><a href="button.html">Button</a></li>
                 <li><a href="">Card</a></li>
             </ul>
         </div>
-        
+
         <div class="documentation__content">
             <section class="component">
                 <!-- <h2 class="component__title">Alerts</h2> -->
@@ -60,7 +61,8 @@
                     <h3 class="component__variant__title">Alerts without action</h3>
                     <p class="variant__desc">Alerts can be created using the <span class="highlight">alert</span> class.
                         There are 6 variants available for alerts. The variants include: <span
-                            class="highlight">success, danger, warning, info, secondary, themed, outlined.</span>You can specify minimum and maximum width of the alerts as per your use-case.</p>
+                            class="highlight">success, danger, warning, info, secondary, themed, outlined.</span>You can
+                        specify minimum and maximum width of the alerts as per your use-case.</p>
                     <div class="component__container">
                         <div class="alert alert-success">
                             <span><i class="fas fa-check-circle"></i></span>
@@ -68,7 +70,7 @@
                         </div>
                         <div class="alert alert-danger">
                             <span><i class="fas fa-exclamation-triangle"></i></span>
-                            Payment failed! Please try later. 
+                            Payment failed! Please try later.
                         </div>
                         <div class="alert alert-warning">
                             <span><i class="fas fa-exclamation-triangle"></i></span>
@@ -87,13 +89,13 @@
                             This is a secondary alert!
                         </div>
                     </div>
-                    <div class="code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520success%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520dangerous%2520alert%21%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520warning%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520an%2520informative%2520alert%21%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-themed%2522%253E%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253EThis%2520is%2520a%2520themed%2520alert%21%2520%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-secondary%2522%253E%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%2520This%2520is%2520secondary%2520alert%21%21%253C%252Fdiv%253E"
-                            style="width: 1200px; height: 169px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-
+                    <div class="code__wrapper">
+                        <code class="iframe_code">
+                            <iframe src="https://carbon.now.sh/embed/dm3FxrmooiC2NqE8Ss6B"
+                                style="width: 100%; height: 300px; border:0; transform: scale(1); overflow:scroll;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
                     </div>
                 </div>
                 <div class="component__variant">
@@ -102,7 +104,9 @@
                     </h3>
                     <p class="component__desc">Alerts can be dismissed by clicking on the <span class=highlight>close
                             button.</span> Just add
-                        class <span class="highlight">alert-dismissable</span> to activate this functionality. Note that dismiss button or icon should have class <span class="highlight">icon-close.</span> Refer to the code for more clarity.</p>
+                        class <span class="highlight">alert-dismissable</span> to activate this functionality. Note that
+                        dismiss button or icon should have class <span class="highlight">icon-close.</span> Refer to the
+                        code for more clarity.</p>
                     <div class="component__container-borderless">
                         <div class="alert alert-success alert-dismissable">
                             <span><i class="fas fa-check-circle"></i></span>
@@ -110,20 +114,21 @@
                             <i class="icon-close fa fa-close"></i>
                         </div>
                     </div>
-                    <div class="code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-success%2520alert-dismissable%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520a%2520success%2520alert%21%250A%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522icon-close%2520fa%2520fa-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-                            style="width: 1200px; height: 167px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
+                    <div class="code__wrapper" style="margin-bottom: 2rem;">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/tuypl0KDUzNZP8PlbtZj"
+                                style="width: 100%; height: 177px; overflow-x:auto;border:none"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
                     </div>
-                    <div class="code">
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=javascript&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Javascript%2520*%252F%250Adocument.querySelector%28%2522.alert-dismissable%2522%29.addEventListener%28%2522click%2522%252C%2520%28e%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520if%2520%28e.target.classList.contains%28%2522fa-close%2522%29%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520e.target.parentElement.style.display%2520%253D%2520%2522none%2522%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%2520%2520%2520%2520%257D%250A%2520%2520%2520%29%253B"
-                            style="width: 1200px; height: 204px; border:0; transform: scale(1); overflow:hidden;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-
+                    <div class="code__wrapper">
+                        <code class="iframe_code">
+                            <iframe src="https://carbon.now.sh/embed/IKpvGug5s3clioqSWlQD"
+                                style="width: 100%; height: 223px; border:0; transform: scale(1); overflow-x: auto;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
                     </div>
                 </div>
                 <div class="component__variant">
@@ -144,13 +149,14 @@
                             This is an outlined alert!
                         </div>
                     </div>
-                    <!-- <div class="code"> -->
-                        <iframe
-                            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=night-owl&wt=none&l=htmlmixed&width=1200&ds=false&dsyoff=98px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520alert-themed%2520alert-outlined%2520alert-dismissable%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520This%2520is%2520an%2520outlined%2520danger%2520alert%21%250A%2509%2520%253Ci%2520class%253D%2522icon-close%2520fa%2520fa-close%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E%250A%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2520alert-outlined%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253E%253Ci%2520class%253D%2522fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520This%2520is%2520an%2520outlined%2520alert%21%250A%2520%253C%252Fdiv%253E"
-                            style="width: 100%; height: 242px; border:0; transform: scale(1); overflow:hidden; margin-bottom: 0;"
-                            sandbox="allow-scripts allow-same-origin">
-                        </iframe>
-                    <!-- </div> -->
+                    <div class="code__wrapper">
+                        <div class="iframe_code">
+                            <iframe src="https://carbon.now.sh/embed/jtmOYaZtPdb3A2KlnzlY"
+                                style="width: 100%; height: 241px; border:0; transform: scale(1); overflow-x:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -165,18 +171,13 @@
             </ul>
         </footer>
     </div>
+
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="theme.js"></script>
-    <script>
-        const elements = document.querySelectorAll(".alert-dismissable");
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", (e) => {
-                if (e.target.classList.contains("fa-close")) {
-                    e.target.parentElement.style.display = "none";
-                }
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

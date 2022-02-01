@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking CSS -->
+
+    <!--Component Library-->
+    <link class="themestyle" rel="stylesheet" href="https://badge-button.netlify.app/darktheme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+</head>
+
+<body>
+    <div class="documentation__container">
+
+        <header class="primary-header" id="top-section">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+                <i class="fa fa-moon theme-icon"></i>
+            </nav>
+        </header>
+
+        <div class="documentation__navigation">
+            <ul class="documentation__navigation__list">
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="#">Badge</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="">Card</a></li>
+            </ul>
+        </div>
+
+        <div class="documentation__content">
+            <section class="component">
+                <h1 class="large-title" style="text-align: initial;">Badges</h1>
+                <div class="component__desc">
+                    <p>Badges can be used to relay some information. For example, a status badge can be used to indicate
+                        whether a user is online or offline.</p>
+                </div>
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Status badge on Avatars</h3>
+                    <p class="variant__desc">Status badge indicates whether the user is <span class="highlight">online,
+                            offline or away.</span></p>
+                    <div class="component__container flex-row-wrap">
+
+                        <div class="avatar avatar-xl">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                            <span class="badge status-online"></span>
+                        </div>
+
+                        <div class="avatar avatar-l avatar-text ">
+                            <span class="badge status-online"></span>
+                            <span class="text">MB</span>
+                        </div>
+
+                        <div class="avatar avatar-m">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                            <span class="badge status-away"></span>
+                        </div>
+
+                        <div class="avatar avatar-s avatar-text ">
+                            <span class="badge status-away"></span>
+                            <span class="text">MB</span>
+                        </div>
+
+                        <div class="avatar avatar-xs">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                            <span class="badge status-offline"></span>
+                        </div>
+
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                            <iframe src="https://carbon.now.sh/embed/"
+                                style="width: 100%; height: 521px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Edit badge on avatars</h3>
+                    <p class="variant__desc">Edit badge can be used to provide an option to <span class="highlight">change the avatar.</span></p>
+                    <div class="component__container flex-row-wrap">
+
+                        <div class="avatar avatar-xl avatar-text ">
+                            <span class="badge badge-avatar badge-notification">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            <span class="text">MB</span>
+                        </div>
+
+                        <div class="avatar avatar-l">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                            <span class="badge badge-avatar badge-notification">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                        </div>
+
+                        <div class="avatar avatar-m avatar-text ">
+                            <span class="badge badge-avatar badge-notification">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            <span class="text">MB</span>
+                        </div>
+
+                        <div class="avatar avatar-s">
+                            <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                            <span class="badge badge-avatar badge-notification">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                        </div>
+
+                        <div class="avatar avatar-xs avatar-text ">
+                            <span class="badge badge-avatar badge-notification">
+                                <i class="fa fa-pencil"></i>
+                            </span>
+                            <span class="text">MB</span>
+                        </div>
+
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Badge on icons</h3>
+                    <p class="variant__desc">Badge can be used on icons to indicate the number of <span class="highlight">notifications</span></p>
+                    <div class="component__container flex-row-wrap">
+                        <div class="icon-badge-container">
+                            <a href="#">
+                                <i class="fas fa-bell">
+                                    <span class="badge badge-icon badge-notification">1</span>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="icon-badge-container">
+                            <a href="#">
+                                <i class="fa fa-envelope">
+                                    <span class="badge badge-icon badge-notification">3</span>
+                                </i>
+                            </a>
+                        </div>
+                        <div class="icon-badge-container">
+                            <a href="#">
+                                <i class="fa fa-comments">
+                                    <span class="badge badge-icon badge-notification">6</span>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <footer class="documentation__footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+
+        <button class="btn-floating float-on-screen bottom-right doc-float">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>

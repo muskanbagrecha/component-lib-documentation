@@ -15,7 +15,7 @@
     <!-- Linking CSS -->
 
     <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://alert-avatar.netlify.app/darktheme.css">
+    <link class="themestyle" rel="stylesheet" href="https://badge-button.netlify.app/darktheme.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -27,7 +27,7 @@
 <body>
     <div class="documentation__container">
 
-        <header class="primary-header">
+        <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
@@ -42,6 +42,7 @@
             <ul class="documentation__navigation__list">
                 <li><a href="alert.html">Alert</a></li>
                 <li><a href="#">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
                 <li><a href="button.html">Button</a></li>
                 <li><a href="">Card</a></li>
             </ul>
@@ -59,7 +60,7 @@
                             class="highlight">avatar-image</span> class to existing classes. A total of 5 sizes are
                         available: <span class="highlight"> xl, l, m, s, xs.</span> To use the different variants
                         add class avatar followed by size. Example: <span class="highlight"> avatar-xl. </span></p>
-                    <div class="component__container avatar__container">
+                    <div class="component__container flex-row-wrap">
                         <div class="avatar avatar-xl">
                             <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
                         </div>
@@ -89,7 +90,7 @@
                     <p class="variant__desc">You can use text avatar by adding class <span
                             class="highlight">avatar-text.</span> A total of 5 sizes are
                         available: <span class="highlight"> xl, l, m, s, xs.</span></p>
-                    <div class="component__container avatar__container">
+                    <div class="component__container flex-row-wrap">
                         <div class="avatar avatar-xl avatar-text">MB</div>
                         <div class="avatar avatar-l avatar-text">MB</div>
                         <div class="avatar avatar-m avatar-text">MB</div>
@@ -110,7 +111,7 @@
                     <p class="variant__desc">You can use squared avatar by adding class <span
                             class="highlight">avatar-squared.</span> Do not forget to specify the size and type of
                         avatar.</p>
-                    <div class="component__container avatar__container">
+                    <div class="component__container flex-row-wrap">
                         <div class="avatar avatar-l avatar-squared">
                             <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
                         </div>
@@ -128,7 +129,7 @@
                     <h3 class="component__variant__title">Shadowed Avatar</h3>
                     <p class="variant__desc">You can use shadowed avatar by adding class <span
                             class="highlight">avatar-shadow.</span> Do not forget to specify the size and type of avatar.</p>
-                    <div class="component__container-borderless avatar__container">
+                    <div class="component__container-borderless flex-row-wrap">
                         <div class="avatar avatar-l avatar-text avatar-squared avatar-shadow">MB</div>
                         <div class="avatar avatar-m avatar-text avatar-squared avatar-shadow">MB</div>
                     </div>
@@ -148,18 +149,13 @@
             </ul>
         </footer>
     </div>
+    
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="theme.js"></script>
-    <script>
-        const elements = document.querySelectorAll(".alert-dismissable");
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].addEventListener("click", (e) => {
-                if (e.target.classList.contains("fa-close")) {
-                    e.target.parentElement.style.display = "none";
-                }
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
