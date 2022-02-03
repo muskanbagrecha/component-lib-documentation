@@ -2,13 +2,13 @@
 const themeIcon = document.querySelector('.theme-icon');
 const themeStyle = document.querySelector('.themestyle');
 themeIcon.onclick = () => {
-    if (themeStyle.href.match("https://badge-button.netlify.app/lighttheme.css")) {
+    if (themeStyle.href.match("https://card-input.netlify.app/lighttheme.css")) {
         themeStyle.setAttribute("href",
-            "https://badge-button.netlify.app/darktheme.css");
+            "https://card-input.netlify.app/darktheme.css");
         themeIcon.classList.remove('fa-sun');
         themeIcon.classList.add('fa-moon');
-    } else if (themeStyle.href.match("https://badge-button.netlify.app/darktheme.css")) {
-        themeStyle.setAttribute("href", "https://badge-button.netlify.app/lighttheme.css");
+    } else if (themeStyle.href.match("https://card-input.netlify.app/darktheme.css")) {
+        themeStyle.setAttribute("href", "https://card-input.netlify.app/lighttheme.css");
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
     }

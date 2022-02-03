@@ -32,11 +32,12 @@
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
                     <li><a href="installation.html"><span>02</span>Installation</a></li>
-                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                    <li class="active"><a href="#"><span>03</span>Documentation</a></li>
                 </ul>
                 <i class="fa fa-moon theme-icon"></i>
             </nav>
         </header>
+
 
         <div class="documentation__navigation">
             <ul class="documentation__navigation__list">
@@ -49,6 +50,94 @@
             </ul>
         </div>
 
+        <div class="documentation__content">
+            <section class="component">
+                <h1 class="large-title" style="text-align: initial;">Input</h1>
+                <div class="component__desc">
+                    <p>Input forms can be used for receiving information from the user.</p>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Active form input fields</h3>
+                    <p class="variant__desc">To use this component, wrap the input element in a container with class
+                        <span class="highlight">input-form.</span> All labels should have class <span
+                            class="highlight">label.</span></p>
+                    <div class="component__container">
+                        <div class="input-form">
+                            <label class="label" for="email">Email Id<span class="red">*</span></label>
+                            <input type="email" name="email" placeholder="Enter Email Id" required>
+                            <label class="label" for="sample-text-are">Address</label>
+                            <textarea name="sample-text-area" placeholder="Enter address here" rows="8"></textarea>
+                            <button class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Read only form fields</h3>
+                    <p class="variant__desc">To use this component, use the keyword <span
+                            class="highlight">readonly</span> in the html input tag and add class <span
+                            class="highlight">readonly.</span></p>
+                    <div class="component__container">
+                        <div class="input-form">
+                            <label class="label" for="email">Email Id</label>
+                            <input type="email" name="email" value="muskanbagrecha04@gmail.com" class="input-readonly" readonly required>
+                            <label class="label" for="password">Password<span class="red">*</span></label>
+                            <input type="password" name="password" placeholder="Enter password" required>
+                            <button class="btn btn-primary">Log in!</button>
+                        </div>                    
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component__variant">
+                    <h3 class="component__variant__title">Read only form fields</h3>
+                    <p class="variant__desc">To use this component, use the keyword <span
+                            class="highlight">readonly</span> in the html input tag and add class <span
+                            class="highlight">readonly.</span></p>
+                    <div class="component__container">
+                        <div class="input-form">
+                            <label class="label" for="email">Email Id</label>
+                            <input type="email" name="email" value="muskanbagrecha04@gmail.com" class="input-readonly" readonly required>
+                            <label class="label" for="password">Password<span class="red">*</span></label>
+                            <input type="password" name="password" placeholder="Enter password" required>
+                            <button class="btn btn-primary">Log in!</button>
+                        </div>                    
+                    </div>
+                    <div class="code__wrapper">
+                        <div class="iframe__code">
+                        </div>
+                    </div>
+                </div>
+
+                div.
+
+            </section>
+        </div>
+
+        <footer class="documentation__footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer>
+        <button class="btn-floating float-on-screen bottom-right doc-float">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
     </div>
 </body>
+
 </html>
