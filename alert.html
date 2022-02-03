@@ -15,7 +15,9 @@
     <!-- Linking CSS -->
 
     <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://badge-button.netlify.app/darktheme.css">
+    <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
+    <link href="css/prism.css" rel="stylesheet" /> 
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
@@ -44,7 +46,8 @@
                 <li><a href="avatar.html">Avatar</a></li>
                 <li><a href="badge.html">Badge</a></li>
                 <li><a href="button.html">Button</a></li>
-                <li><a href="">Card</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="input.html">Input</a></li>
             </ul>
         </div>
 
@@ -104,11 +107,11 @@
                     </h3>
                     <p class="component__desc">Alerts can be dismissed by clicking on the <span class=highlight>close
                             button.</span> Just add
-                        class <span class="highlight">alert-dismissable</span> to activate this functionality. Note that
+                        class <span class="highlight">component-close</span> to activate this functionality. Note that
                         dismiss button or icon should have class <span class="highlight">icon-close.</span> Refer to the
                         code for more clarity.</p>
                     <div class="component__container-borderless">
-                        <div class="alert alert-success alert-dismissable">
+                        <div class="alert alert-success component-close">
                             <span><i class="fas fa-check-circle"></i></span>
                             This is a success alert!
                             <i class="icon-close fa fa-close"></i>
@@ -139,10 +142,11 @@
                             class="highlight">alert-outlined</span> class to existing classes.</span>
                     </p>
                     <div class="component__container-borderless">
-                        <div class="alert alert-themed alert-outlined alert-dismissable">
+                        <div class="alert alert-themed alert-outlined">
                             <span><i class="fas fa-exclamation-triangle"></i></span>
                             This is an outlined themed alert!
-                            <i class="icon-close fa fa-close"></i>
+                            <span class="component-close">                            <i class="icon-close fa fa-close"></i>
+                            </span>
                         </div>
                         <div class="alert alert-info alert-outlined">
                             <span><i class="fas fa-exclamation-triangle"></i></span>
@@ -177,6 +181,7 @@
     </button>
 
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="scripts/prism.js"></script> <!-- syntax highlighting -->
     <script src="app.js"></script>
 </body>
 

@@ -4,7 +4,7 @@ const themeStyle = document.querySelector('.themestyle');
 themeIcon.onclick = () => {
     if (themeStyle.href.match("https://badge-button.netlify.app/lighttheme.css")) {
         themeStyle.setAttribute("href",
-        "https://badge-button.netlify.app/darktheme.css");
+            "https://badge-button.netlify.app/darktheme.css");
         themeIcon.classList.remove('fa-sun');
         themeIcon.classList.add('fa-moon');
     } else if (themeStyle.href.match("https://badge-button.netlify.app/darktheme.css")) {
@@ -16,12 +16,20 @@ themeIcon.onclick = () => {
 
 /* JS for closing alert */
 
-const elements = document.querySelectorAll(".alert-dismissable");
+// const elements = document.querySelectorAll(".alert-dismissable");
+// for (let i = 0; i < elements.length; i++) {
+//     elements[i].addEventListener("click", (e) => {
+//         if (e.target.classList.contains("fa-close")) {
+//             e.target.parentElement.style.display = "none";
+//         }
+//     });
+// }
+
+/* JS for closing cards */
+const elements = document.querySelectorAll(".component-close");
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", (e) => {
-        if (e.target.classList.contains("fa-close")) {
-            e.target.parentElement.style.display = "none";
-        }
+        e.target.parentElement.parentElement.style.display = "none";
     });
 }
 
