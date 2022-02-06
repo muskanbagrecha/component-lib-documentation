@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram</title>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,18 +17,22 @@
 
     <!-- Linking CSS -->
 
-    <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app//darktheme.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button</title>
+    <!--Component Library-->
+    <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
+
     <div class="documentation__container">
 
+        <!-- primary navbar -->
         <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
@@ -36,168 +43,241 @@
                 <i class="fa fa-moon theme-icon"></i>
             </nav>
         </header>
+        <!-- primary navbar ends -->
 
-        <div class="documentation__navigation">
+        <!-- Component navigation -->
+        <nav class="documentation__navigation">
             <ul class="documentation__navigation__list">
-                <li><a href="alert.html">Alert</a></li>
+                <li><a href="#">Alert</a></li>
                 <li><a href="avatar.html">Avatar</a></li>
                 <li><a href="badge.html">Badge</a></li>
-                <li><a href="#">Button</a></li>
+                <li><a href="button.html">Button</a></li>
                 <li><a href="card.html">Card</a></li>
                 <li><a href="input.html">Input</a></li>
             </ul>
-        </div>
-        <div class="documentation__content">
-            <section class="component">
-                <h1 class="large-title" style="text-align: initial;">Button</h1>
-                <div class="component__desc">
-                    <p>
-                        The button component can be used to <span class="highlight"> trigger an action. </span> This
-                        component library supports multiple variants of buttons which can be customized easily.
-                    </p>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Primary Buttons</h3>
-                    <p class="variant__desc">You can use primary buttons by adding class <span class="highlight">btn.
-                        </span> You may use the button element or anchor tag (with text or icon). </p>
-                    <div class="component__container button__container">
-                        <button class="btn btn-primary">Click me</button>
-                        <button class="btn btn-primary"><i class="icon fas fa-shopping-cart"></i>Add to cart</button>
-                        <button class="btn btn-outline"><i class="icon fas fa-heart"></i>Wishlist</button>
-                        <a class="btn-link-text">Primary-Text</a>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/Y359mdF2T7Uqj5SgFFTS"
-                                style="width: 100%; height: 210px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
+        </nav>
+        <!-- Component navigation ends -->
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Primary Buttons With Icons</h3>
-                    <p class="variant__desc">You can use <span class="highlight">icons</span> as primary buttons. </p>
-                    <div class="component__container button__container">
-                        <button class="btn btn-outline"><i class="icon fas fa-shopping-cart"></i>Buy now</button>
-                        <i class="btn-icon fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/wXMBuJMaJn5u1EHKLByt"
-                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
+        <main class="documentation__content">
+            <h1 class="large-title" style="text-align: initial;">Button</h1>
+            <p class="component__desc">
+                The button component can be used to <span class="highlight"> trigger an action. </span> This
+                component library supports multiple variants of buttons which can be customized easily.
+            </p>
+
+            <!-- Primary buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Primary Buttons</h3>
+                <p class="variant__desc">You can use primary buttons by adding class <span class="highlight">btn.
+                    </span> You may use the button element or anchor tag (with text or icon). </p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-primary">Click me</button>
+                    <button class="btn btn-primary">
+                        <i class="icon fas fa-shopping-cart"></i>
+                        <span>Add to cart</span>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="icon fas fa-heart"></i>
+                        <span>Wishlist</span>
+                    </button>
+                    <a class="btn-link-text">Primary-Text</a>
                 </div>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Secondary Buttons</h3>
-                    <p class="variant__desc">You can also use secondary buttons by adding class <span
-                            class="highlight">btn-secondary.</span></p>
-                    <div class="component__container button__container">
-                        <button class="btn btn-secondary">Secondary</button>
-                        <button class="btn btn-secondary-outline">Privacy Agreement</button>
-                        <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/fANeTo4NGvShsu6mNptl"
-                                style="width: 544px; height: 130px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-primary">Click me</button>
+
+                                    <button class="btn btn-primary">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <span>Add to cart</span>
+                                    </button>
+
+                                    <button class="btn btn-outline">
+                                        <i class="icon fas fa-heart"></i>
+                                        <span>Wishlist</span>
+                                    </button>
+
+                                    <a class="btn-link-text">Primary-Text</a>
+                                </script>
+                            </code>
+                        </pre>
+                </div>
+            </section>
+
+            <!-- Primary buttons with icons -->
+            <section class="component__variant">
+                <h3 class="variant__title">Primary Buttons With Icons</h3>
+                <p class="variant__desc">You can use <span class="highlight">icons</span> as primary buttons. </p>
+                <div class="bordered-container">
+                    <button class="btn btn-outline">
+                        <i class="icon fas fa-shopping-cart"></i>
+                        <span>Buy now</span>
+                    </button>
+                    <i class="btn-icon fas fa-shopping-cart"></i>
                 </div>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">
-                        Different Sizes
-                    </h3>
-                    <p class="variant__desc">Depending on the use-case, you can select a small or a large button. Use
-                        <span class="highlight">btn-small and .btn-large</span> to change the size.</p>
-                    <div class="component__container button__container">
-                        <button class="btn btn-outline btn-small">Small</button>
-                        <button class="btn btn-outline btn-large">Large</button>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/Fh1zbLuEvAqMzPyuifH9"
-                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <button class="btn btn-outline">
+                                    <i class="icon fas fa-shopping-cart"></i>
+                                    <span>Buy now</span>
+                                </button>
+
+                                <i class="btn-icon fas fa-shopping-cart"></i>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Secondary containers -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Secondary Buttons</h3>
+                <p class="variant__desc">You can also use secondary buttons by adding class <span
+                        class="highlight">btn-secondary.</span></p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-secondary-outline">Privacy Agreement</button>
+                    <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
                 </div>
 
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-secondary">Secondary</button>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">
-                        Floating Action Buttons
-                    </h3>
-                    <p class="variant__desc">Floating buttons can be used to promote an <span
-                            class="highlight">important action </span>such as creating or sharing something. They are
-                        mostly used for <span class="highlight">positive actions</span> like adding something to
-                        wishlist.
-                        <ul>
-                            <li>Note that buttons can float against the parent container or the viewport. For static
-                                position, use class <span class="highlight">btn-floating.</span></li>
-                            <li>For floating with respect to the parent container, add one more class which specifies
-                                the position: <span class="highlight">top-left, top-right, bottom-left,
-                                    bottom-right.</span></li>
-                            <li>For floating button with respect to viewport, add class <span
-                                    class="highlight">float-on-screen.</span> For example, the button on bottom right of the screen.</li>
-                            <li>Position can be customized by overriding the positions specified in the respective
-                                class.</li>
-                        </ul>
-                    </p>
-                    <div class="component__container button__container">
-                        <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button></button>
-                        <button class="btn-floating"><i class="fas fa-plus"></i></button></button>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/Fh1zbLuEvAqMzPyuifH9"
-                                style="width: 100%; height: 111px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
+                                    <button class="btn btn-secondary-outline">Privacy Agreement</button>
 
-
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Disabled Button</h3>
-                    <p class="variant__desc">You can disable buttons by adding class <span
-                            class="highlight">btn-disabled.</span></p>
-                    <div class="component__container button__container">
-                        <button class="btn btn-primary btn-disabled">Create account</button>
-                        <button class="btn btn-outline btn-disabled">Place order</button>
-                        <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/3Qu9Tmma2BjXmP5N70WV"
-                                style="width: 100%; height: 113px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
+                                    <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
+                                </script>
+                            </code>
+                        </pre>
                 </div>
 
             </section>
-        </div>
-        <footer class="documentation__footer">
+
+            <!-- Buttons with different sizes -->
+            <section class="component__variant">
+                <h3 class="variant__title">
+                    Different Sizes
+                </h3>
+                <p class="variant__desc">Depending on the use-case, you can select a small or a large button. Use <span
+                        class="highlight">btn-small and .btn-large</span> to change the size.</p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-outline btn-small">Small</button>
+                    <button class="btn btn-outline btn-large">Large</button>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-outline btn-small">Small</button>
+
+                                    <button class="btn btn-outline btn-large">Large</button>
+                                </script>
+                            </code>
+                    </pre>
+                </div>
+
+            </section>
+
+            <!-- Floating buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">
+                    Floating Action Buttons
+                </h3>
+                <p class="variant__desc">Floating buttons can be used to promote an <span class="highlight">important
+                        action </span>such as creating or sharing something. They are
+                    mostly used for <span class="highlight">positive actions</span> like adding something to
+                    wishlist.
+                    <ul>
+                        <li>Note that buttons can float against the parent container or the viewport. For static
+                            position, use class <span class="highlight">btn-floating.</span></li>
+                        <li>For floating with respect to the parent container, add one more class which specifies
+                            the position: <span class="highlight">top-left, top-right, bottom-left,
+                                bottom-right.</span></li>
+                        <li>For floating button with respect to viewport, add class <span
+                                class="highlight">float-on-screen.</span> For example, the button on bottom right of
+                            the screen.</li>
+                        <li>Position can be customized by overriding the positions specified in the respective
+                            class.</li>
+                    </ul>
+                </p>
+
+                <div class="bordered-container">
+                    <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button></button>
+                    <button class="btn-floating"><i class="fas fa-plus"></i></button></button>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button>
+                                    <button class="btn-floating"><i class="fas fa-plus"></i></button>
+                                </script>
+                            </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Disabled buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Disabled Button</h3>
+                <p class="variant__desc">You can disable buttons by adding class <span
+                        class="highlight">btn-disabled.</span></p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-primary btn-disabled">Create account</button>
+                    <button class="btn btn-outline btn-disabled">Place order</button>
+                    <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
+                </div>
+                
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <button class="btn btn-primary btn-disabled">Create account</button>
+
+                                <button class="btn btn-outline btn-disabled">Place order</button>
+
+                                <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
             <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
             <ul class="footer__list">
                 <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
             </ul>
+            <p class="copyright">© Fashgram'22</p>
         </footer>
+        <!-- Footer ends -->
+
     </div>
 
     <button class="btn-floating float-on-screen bottom-right doc-float">
@@ -205,7 +285,8 @@
     </button>
 
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

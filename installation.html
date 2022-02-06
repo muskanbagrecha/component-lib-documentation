@@ -14,17 +14,20 @@
 
     <!-- Linking CSS -->
 
+    <!--Prism CSS-->
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/code.css">
+
     <!--Component Library-->
     <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
 
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="styles.css">
-    <title>Installation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fashgram</title>
 </head>
 
 <body>
-    <div class="main-container">
+    <main class="installation-container">
         <header class="primary-header">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
@@ -35,10 +38,40 @@
                 <i class="fa fa-moon theme-icon"></i>
             </nav>
         </header>
+        <section class="installation-content flex margin-side-medium">
             <h1 class="large-title">Installation</h1>
-    </div>
+            <img src="assets/illustration.svg" alt="design-illustration" class="img-responsive" style="height: auto; width: 45%; margin: 1rem auto;">
+            <p class="subtitle">To start using this component library, paste the following code snippet in your <span class="highlight">HTML head tag.</span> Please note that your own stylesheets should be included after this stylesheet to allow customization.</p>
+
+            <div class="code__wrapper">
+                <pre>
+                    <code class="language-markup">
+                        <script type="prism-html-markup">
+                            <!-- For dark theme  -->
+                            <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
+
+                            <!-- For light theme  -->
+                            <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/lighttheme.css">
+                        </script>
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="copyright">© Fashgram'22</p>
+        </footer>
+    </main>
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

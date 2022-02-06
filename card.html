@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram</title>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +17,22 @@
 
     <!-- Linking CSS -->
 
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet" />
+
     <!--Component Library-->
     <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 
 <body>
     <div class="documentation__container">
 
+        <!-- primary navbar -->
         <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
@@ -37,57 +43,307 @@
                 <i class="fa fa-moon theme-icon"></i>
             </nav>
         </header>
+        <!-- primary navbar ends -->
 
-        <div class="documentation__navigation">
+        <!-- Component navigation -->
+        <nav class="documentation__navigation">
             <ul class="documentation__navigation__list">
-                <li><a href="alert.html">Alert</a></li>
+                <li><a href="#">Alert</a></li>
                 <li><a href="avatar.html">Avatar</a></li>
                 <li><a href="badge.html">Badge</a></li>
                 <li><a href="button.html">Button</a></li>
-                <li><a href="#">Card</a></li>
+                <li><a href="card.html">Card</a></li>
                 <li><a href="input.html">Input</a></li>
             </ul>
-        </div>
+        </nav>
+        <!-- Component navigation ends -->
 
-        <div class="documentation__content">
-            <section class="component">
-                <h1 class="large-title" style="text-align: initial;">Cards</h1>
-                <div class="component__desc">
-                    <p>Cards can be used to club <span class="highlight">related information. </span> For example:
-                        product listing.</p>
-                </div>
+        <!-- Component -->
+        <main class="documentation__content">
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Horizontal cards</h3>
-                    <p class="variant__desc">Horizontal cards can be used by adding class <span class="highlight">card
-                            and card-horizontal</span></p>
-                    <div class="component__container">
+            <h1 class="large-title">Cards</h1>
+            <div class="component__desc">
+                <p>Cards can be used to club <span class="highlight">related information. </span> For example: product
+                    listing.</p>
+            </div>
 
+            <!-- Horizontal Card -->
+            <section class="component__variant">
 
-                        <div class="card card-horizontal">
-                            <div class="card__img">
-                                <img src="assets/purple-dress.jpg" alt="img" class="img-responsive">
+                <h3 class="variant__title">Horizontal cards</h3>
+                <p class="variant__desc">Horizontal cards can be used by adding class <span class="highlight">card and
+                        card-horizontal</span></p>
+
+                <div class="bordered-container">
+                    <div class="card card-horizontal">
+                        <div class="card__img">
+                            <img src="assets/purple-dress.jpg" alt="card-img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
                             </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <h3 class="card__title">Purple Dress</h3>
-                                    <p class="card__subtitle">Women's ball gown</p>
-                                </div>
-                                <div class="card__desc">
-                                    <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
-                                        plain floor length appears chic and excellent for parties.</p>
-                                    <small>Sold by H&M</small>
-                                </div>
-                                <div class="card__CTA">
-                                    <a href="#" class="btn btn-primary">Cart</a>
-                                    <a href="" class="btn btn-outline">Wishlist</a>
-                                </div>
+                            <div class="card__desc">
+                                <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
+                                    plain floor length appears chic and excellent for parties.</p>
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__CTA">
+                                <button class="btn btn-primary">
+                                    <i class="icon fas fa-shopping-cart"></i>
+                                    <span>Buy now</span>
+                                </button>
+                                <button class="btn btn-outline">
+                                    <i class="icon fa fa-heart"></i>
+                                    <span>Wishlist</span>
+                                </button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card card-horizontal">
+                    <!-- Card with price -->
+                    <div class="card card-horizontal">
+                        <div class="card__img">
+                            <img src="assets/purple-dress.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
+                            </div>
+                            <div class="card__desc">
+                                <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
+                                    plain floor length appears chic and excellent for parties.</p>
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__amount">
+                                <h4>Rs. 10,800</h4>
+                                <p class="strike-text"><del>Rs. 12,000</del></p>
+                                <p class="red-highlight">10%</p>
+                            </div>
+                            <div class="card__CTA">
+                                <button class="btn btn-primary">
+                                    <i class="icon fas fa-shopping-cart"></i>
+                                    <span>Buy now</span>
+                                </button>
+                                <button class="btn btn-outline">
+                                    <i class="icon fa fa-heart"></i>
+                                    <span>Wishlist</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="card card-horizontal">
+                                    <div class="card__img">
+                                        <img src="..." alt="card-img" class="img-responsive">
+                                    </div>
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <h3 class="card__title">Purple Dress</h3>
+                                            <p class="card__subtitle">Women's ball gown</p>
+                                        </div>
+                                        <div class="card__desc">
+                                            <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
+                                                plain floor length appears chic and excellent for parties.</p>
+                                            <small>Sold by H&M</small>
+                                        </div>
+                                        <div class="card__amount">
+                                            <h4>Rs. 10,800</h4>
+                                            <p class="strike-text"><del>Rs. 12,000</del></p>
+                                            <p class="red-highlight">10%</p>
+                                        </div>
+                                        <div class="card__CTA">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Vertical cards -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Vertical cards</h3>
+                <p class="variant__desc">Vertical cards can be used by adding class <span class="highlight">card and
+                        card-vertical</span></p>
+
+                <div class="bordered-container flex-row-wrap">
+                    <div class="card card-vertical">
+                        <div class="card__img">
+                            <img src="assets/dress-pic.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
+                            </div>
+                            <div class="card__desc">
+                                <p>Add an adolescent burst of colour to your wardrobe with this purple gown.</p>
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__CTA">
+                                <a href="#" class="btn btn-primary">Cart</a>
+                                <a href="" class="btn btn-outline">Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-vertical">
+                        <div class="card__img">
+                            <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
+                            </div>
+                            <div class="card__desc">
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__amount">
+                                <h4>Rs. 10,800</h4>
+                                <p class="strike-text"><del>Rs. 12,000</del></p>
+                                <p class="red-highlight">10%</p>
+                            </div>
+                            <div class="card__CTA">
+                                <a href="#" class="btn btn-primary">Cart</a>
+                                <a href="" class="btn btn-outline">Wishlist</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="card card-vertical">
+                                    <div class="card__img">
+                                        <img src="..." alt="img" class="img-responsive">
+                                    </div>
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <h3 class="card__title">Purple Dress</h3>
+                                            <p class="card__subtitle">Women's ball gown</p>
+                                        </div>
+                                        <div class="card__desc">
+                                            <small>Sold by H&M</small>
+                                        </div>
+                                        <div class="card__amount">
+                                            <h4>Rs. 10,800</h4>
+                                            <p class="strike-text"><del>Rs. 12,000</del></p>
+                                            <p class="red-highlight">10%</p>
+                                        </div>
+                                        <div class="card__CTA">
+                                            <a href="#" class="btn btn-primary">Cart</a>
+                                            <a href="" class="btn btn-outline">Wishlist</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Dismissable cards -->
+            <section class="component__variant">
+                <h3 class="variant__title">Dismissable cards</h3>
+                <p class="variant__desc">Cards can be dismissed by adding class <span
+                        class="highlight">component-close.</span></p>
+                <div class="component__container">
+                    <div class="card card-horizontal">
+                        <span class="component-close">
+                            <i class="fa fa-close"></i>
+                        </span>
+                        <div class="card__img">
+                            <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
+                            </div>
+                            <div class="card__desc">
+                                <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The plain
+                                    floor length appears chic and excellent for parties.</p>
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__CTA">
+                                <button class="btn btn-primary">
+                                    <i class="icon fas fa-shopping-cart"></i>
+                                    <span>Buy now</span>
+                                </button>
+                                <button class="btn btn-outline">
+                                    <i class="icon fa fa-heart"></i>
+                                    <span>Wishlist</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="card card-horizontal">
+                                    <span class="component-close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                    <div class="card__img">
+                                        <img src="..." alt="card-img" class="img-responsive">
+                                    </div>
+                                    <div class="card__content">
+                                        <div class="card__header">
+                                            <h3 class="card__title">Purple Dress</h3>
+                                            <p class="card__subtitle">Women's ball gown</p>
+                                        </div>
+                                        <div class="card__desc">
+                                            <p>Add an adolescent burst of colour to your wardrobe with this purple gown.</p>
+                                            <small>Sold by H&M</small>
+                                        </div>
+                                        <div class="card__CTA">
+                                            <button class="btn btn-primary">
+                                                <i class="icon fas fa-shopping-cart"></i>
+                                                <span>Buy now</span>
+                                            </button>  
+                                            <button class="btn btn-outline">
+                                                <i class="icon fa fa-heart"></i>
+                                                <span>Wishlist</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Card with text overlay -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Card with text overlay</h3>
+                <p class="variant__desc">These cards can be created by wrapping the card content with <span
+                        class="highlight">overlay-container.</span>Overlay-text div is used to display the text that
+                    will overshadow the container.</p>
+
+                <div class="bordered-container">
+                    <div class="card card-vertical">
+
+                        <div class="overlay-container">
                             <div class="card__img">
-                                <img src="assets/purple-dress.jpg" alt="img" class="img-responsive">
+                                <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
                             </div>
                             <div class="card__content">
                                 <div class="card__header">
@@ -95,8 +351,6 @@
                                     <p class="card__subtitle">Women's ball gown</p>
                                 </div>
                                 <div class="card__desc">
-                                    <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
-                                        plain floor length appears chic and excellent for parties.</p>
                                     <small>Sold by H&M</small>
                                 </div>
                                 <div class="card__amount">
@@ -111,120 +365,86 @@
                             </div>
                         </div>
 
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/"
-                                style="width: 100%; height: 521px; border:0; transform: scale(1); overflow:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
+                        <div class="overlay-text">
+                            Out of stock
                         </div>
+
                     </div>
                 </div>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Vertical cards</h3>
-                    <p class="variant__desc">Vertical cards can be used by adding class <span class="highlight">card and
-                            card-vertical</span></p>
-                    <div class="component__container flex-row-wrap">
-                        <div class="card card-vertical">
-                            <div class="card__img">
-                                <img src="assets/dress-pic.jpg" alt="img" class="img-responsive">
+            </section>
+
+            <!-- Card with badges -->
+
+            <section class="component__variant">
+                <h3 class="variant__title">Card with badges</h3>
+                <p class="variant__desc">
+                    Badges can be added to the card by adding a span with class <span
+                        class="highlight">card__badge.</span>
+                </p>
+                <div class="bordered-container">
+                    <div class="card card-vertical">
+                        <span class="card__badge">Selling fast</span>
+                        <div class="card__img">
+                            <img src="./assets/dress-pic.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
                             </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <h3 class="card__title">Purple Dress</h3>
-                                    <p class="card__subtitle">Women's ball gown</p>
-                                </div>
-                                <div class="card__desc">
-                                    <!-- <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The plain floor length appears chic and excellent for parties.</p> -->
-                                    <small>Sold by H&M</small>
-                                </div>
-                                <div class="card__CTA">
-                                    <a href="#" class="btn btn-primary">Cart</a>
-                                    <a href="" class="btn btn-outline">Wishlist</a>
-                                </div>
+                            <div class="card__desc">
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__amount">
+                                <h4>Rs. 10,800</h4>
+                                <p class="strike-text"><del>Rs. 12,000</del></p>
+                                <p class="red-highlight">10%</p>
+                            </div>
+                            <div class="card__CTA">
+                                <a href="#" class="btn btn-primary">Cart</a>
+                                <a href="" class="btn btn-outline">Wishlist</a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="card card-vertical">
-                            <div class="card__img">
-                                <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
+                    <div class="card card-horizontal">
+                        <span class="card__badge">New arrival</span>
+                        <div class="card__img">
+                            <img src="./assets/dress-pic.jpg" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="card__header">
+                                <h3 class="card__title">Purple Dress</h3>
+                                <p class="card__subtitle">Women's ball gown</p>
                             </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <h3 class="card__title">Purple Dress</h3>
-                                    <p class="card__subtitle">Women's ball gown</p>
-                                </div>
-                                <div class="card__desc">
-                                    <!-- <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The plain floor length appears chic and excellent for parties.</p> -->
-                                    <small>Sold by H&M</small>
-                                </div>
-                                <div class="card__amount">
-                                    <h4>Rs. 10,800</h4>
-                                    <p class="strike-text"><del>Rs. 12,000</del></p>
-                                    <p class="red-highlight">10%</p>
-                                </div>
-                                <div class="card__CTA">
-                                    <a href="#" class="btn btn-primary">Cart</a>
-                                    <a href="" class="btn btn-outline">Wishlist</a>
-                                </div>
+                            <div class="card__desc">
+                                <small>Sold by H&M</small>
+                            </div>
+                            <div class="card__amount">
+                                <h4>Rs. 10,800</h4>
+                                <p class="strike-text"><del>Rs. 12,000</del></p>
+                                <p class="red-highlight">10%</p>
+                            </div>
+                            <div class="card__CTA">
+                                <a href="#" class="btn btn-primary">Cart</a>
+                                <a href="" class="btn btn-outline">Wishlist</a>
                             </div>
                         </div>
 
                     </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                        </div>
-                    </div>
-                </div>
-                
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Dismissable cards</h3>
-                    <p class="variant__desc">Cards can be dismissed by adding class <span
-                            class="highlight">component-close.</span></p>
-                    <div class="component__container">
-                        <div class="card card-horizontal">
-                            <span class="component-close">
-                                <i class="fa fa-close"></i>
-                            </span>
-                            <div class="card__img">
-                                <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
-                            </div>
-                            <div class="card__content">
-                                <div class="card__header">
-                                    <h3 class="card__title">Purple Dress</h3>
-                                    <p class="card__subtitle">Women's ball gown</p>
-                                </div>
-                                <div class="card__desc">
-                                    <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The
-                                        plain floor length appears chic and excellent for parties.</p>
-                                    <small>Sold by H&M</small>
-                                </div>
-                                <div class="card__CTA">
-                                    <a href="#" class="btn btn-primary">Cart</a>
-                                    <a href="" class="btn btn-outline">Wishlist</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
 
-                        </div>
-                    </div>
                 </div>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Card with text overlay</h3>
-                    <p class="variant__desc">These cards can be created by adding wrapping the card content with <span
-                            class="highlight">overlay-container.</span>Overlay-text div is used to display the text that will overshadow the container.</p>
-                    <div class="component__container">
-                        <div class="card card-vertical">
-                            <div class="overlay-container">
+                <div class="code__wrapper">
+                    <pre>
+                    <code class="language-markup">
+                        <script type="prism-html-markup">
+                            <div class="card card-vertical">
+                                <span class="card__badge">Selling fast</span>
                                 <div class="card__img">
-                                    <img src="assets/purple-dress2.jpg" alt="img" class="img-responsive">
+                                    <img src="..." alt="img" class="img-responsive">
                                 </div>
                                 <div class="card__content">
                                     <div class="card__header">
@@ -232,7 +452,6 @@
                                         <p class="card__subtitle">Women's ball gown</p>
                                     </div>
                                     <div class="card__desc">
-                                        <!-- <p>Add an adolescent burst of colour to your wardrobe with this purple gown. The plain floor length appears chic and excellent for parties.</p> -->
                                         <small>Sold by H&M</small>
                                     </div>
                                     <div class="card__amount">
@@ -246,31 +465,95 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="overlay-text">
-                                Out of stock
+                        </script>
+                    </code>
+                </pre>
+                </div>
+
+            </section>
+
+            <!-- Text only cards -->
+            <section class="component__variant">
+                <h3 class="variant__title">Text only cards</h3>
+                <p class="variant__desc">
+                    Text only cards can be created by adding the class <span class="highlight">text-only.</span> Alternatively, the card__img part can be removed completely from the markup.
+                </p>
+                <div class="bordered-container">
+                    <div class="card text-only card-vertical">
+                        <div class="card__img">
+                            <img src="https://picsum.photos/id/11/400/400" alt="img" class="img-responsive">
+                        </div>
+                        <div class="card__content">
+                            <div class="header">
+                                <h3 class="header__title">Title</h3>
+                                <div class="card__subtitle">by Muskan Bagrecha</div>
+                            </div>
+                            <div class="card__desc">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, ad!
+                            </div>
+                            <div class="card__CTA">
+                                <div class="CTA__button">
+                                    <button class="btn btn-primary">Read More!</button>
+                                    <button class="btn btn-outline">Save!</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="code__wrapper">
+                    <pre>
+                    <code class="language-markup">
+                        <script type="prism-html-markup">
+                            <div class="card text-only card-vertical">
+                                <div class="card__img">
+                                    <img src="..." alt="img" class="img-responsive">
+                                </div>
+                                <div class="card__content">
+                                    <div class="header">
+                                        <h3 class="header__title">Title</h3>
+                                        <div class="card__subtitle">by Muskan Bagrecha</div>
+                                    </div>
+                                    <div class="card__desc">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, ad!
+                                    </div>
+                                    <div class="card__CTA">
+                                        <div class="CTA__button">
+                                            <button class="btn btn-primary">Read More!</button>
+                                            <button class="btn btn-outline">Save!</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </script>
+                    </code>
+                </div>
+            
             </section>
-        </div>
-        <footer class="documentation__footer">
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
             <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
             <ul class="footer__list">
                 <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
             </ul>
+            <p class="copyright">© Fashgram'22</p>
         </footer>
+        <!-- Footer ends -->
 
         <button class="btn-floating float-on-screen bottom-right doc-float">
             <i class="fas fa-arrow-up"></i>
         </button>
 
+        <script src="js/prism.js"></script>
         <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+        <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+.snippet_container {
+	border-radius: 2rem;
+	overflow-x: auto;
+	width: var(--WIDTH-MAIN-CONTENT);
+	margin: 3rem auto 4rem 0;
+	padding: 5px;
+	background: var(--COLOR-PRIMARY-DARKEST);
+	text-align: center;
+}
+
+/* for container */
+
+.snippet_container .snippet_container__script {
+	border-radius: 1rem;
+	font-size: 1.35rem;
+}
+
+.snippet_container .snippet_container__script {
+	color: red;
+	background: red;
+}
+
+/* for strings */
+.snippet_container .code-toolbar .snippet_container__script .string {
+	color: red;
+}
+
+/* for braces */
+.snippet_container__script
+	.snippet_container__script
+	.atrule
+	.url
+	.punctuation {
+	color: red;
+}
+
+/* for import */
+.snippet_container .code-toolbar .snippet_container__script .atrule .rule {
+	color: red;
+}
+
+/* ------------Button------------- */
+
+.snippet_container .code-toolbar .toolbar {
+	opacity: 0.6;
+}
+
+.snippet_container
+	.code-toolbar
+	.toolbar
+	.toolbar-item
+	.copy-to-clipboard-button {
+	font-size: 1.4rem;
+	color: red;
+	font-weight: 600;
+	height: 2.5rem;
+	border-radius: 10%;
+	/* background: var(); */
+	margin: 0.3rem 8px;
+}
+
+.snippet_container
+	.code-toolbar
+	.toolbar
+	.toolbar-item
+	.copy-to-clipboard-button:hover {
+	transform: scale(1.02);
+}

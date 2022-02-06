@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +17,16 @@
 
     <!-- Linking CSS -->
 
+    <!-- prism css -->
+    <link rel="stylesheet" href="css/prism.css">
+
     <!--Component Library-->
     <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -52,72 +57,136 @@
 
         <div class="documentation__content">
             <section class="component">
-                <h1 class="large-title" style="text-align: initial;">Input</h1>
-                <div class="component__desc">
-                    <p>Input forms can be used for receiving information from the user.</p>
-                </div>
+                <h1 class="large-title">Input</h1>
+                <p class="component__desc">Input forms can be used for receiving information from the user.</p>
 
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Active form input fields</h3>
+
+                <!-- Active form input fields  -->
+                <section class="component__variant">
+
+                    <h3 class="variant__title">Active form input fields</h3>
                     <p class="variant__desc">To use this component, wrap the input element in a container with class
                         <span class="highlight">input-form.</span> All labels should have class <span
                             class="highlight">label.</span></p>
-                    <div class="component__container">
-                        <div class="input-form">
-                            <label class="label" for="email">Email Id<span class="red">*</span></label>
-                            <input type="email" name="email" placeholder="Enter Email Id" required>
-                            <label class="label" for="sample-text-are">Address</label>
-                            <textarea name="sample-text-area" placeholder="Enter address here" rows="8"></textarea>
-                            <button class="btn btn-primary">Submit</button>
-                        </div>
+
+                    <div class="input-form">
+                        <label class="label" for="email">Email Id<span class="red">*</span></label>
+                        <input type="email" name="email" placeholder="Enter Email Id" required>
+                        <label class="label" for="sample-text-are">Address</label>
+                        <textarea name="sample-text-area" placeholder="Enter address here" rows="8"></textarea>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+
+                    <div class="code__wrapper">
+                        <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <div class="input-form">
+                                        <label class="label" for="email">Email Id<span class="red">*</span></label>
+                                        <input type="email" name="email" placeholder="Enter Email Id" required>
+                                        <label class="label" for="sample-text-are">Address</label>
+                                        <textarea name="sample-text-area" placeholder="Enter address" rows="8"></textarea>
+                                        <button class="btn btn-primary">Submit</button>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </section>
+
+                <!-- Read only form fields  -->
+                <div class="component__variant">
+                    <h3 class="variant__title">Read only form fields</h3>
+                    <p class="variant__desc">To use this component, use the keyword <span
+                            class="highlight">readonly</span> in the html input tag and add class <span
+                            class="highlight">readonly.</span></p>
+                    <div class="input-form">
+                        <label class="label" for="email">Email Id</label>
+                        <input type="email" name="email" value="muskanbagrecha04@gmail.com" class="input-readonly"
+                            readonly required>
+                        <label class="label" for="password">Password<span class="red">*</span></label>
+                        <input type="password" name="password" placeholder="Enter password" required>
+                        <button class="btn btn-primary">Log in!</button>
                     </div>
                     <div class="code__wrapper">
-                        <div class="iframe__code">
-                        </div>
+                        <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <div class="input-form">
+                                        <label class="label" for="email">Email Id</label>
+                                        <input type="email" name="email" value="abc@gmail.com" class="input-readonly" readonly required>
+                                       <label class="label" for="password">Password<span class="red">*</span></label>
+                                       <input type="password" name="password" placeholder="Enter password" required>
+                                       <button class="btn btn-primary">Log in!</button>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <!-- Form validation  -->
+                <div class="component__variant">
+                    <h3 class="variant__title">Form validation for errors</h3>
+                    <p class="variant__desc">To use this component, use the keyword <span class="highlight">input-error
+                            and alert-danger to display alert message.</span></p>
+
+                    <div class="input-form">
+                        <label class="label" for="email">Email ID</label>
+                        <input type="text" name="email" class="input-error" placeholder="Enter email id">
+                        <label class="label" for="password">Password<span class="red">*</span></label>
+                        <input type="password" name="password" class="input-error" placeholder="Enter password"
+                            required>
+                        <span class="alert alert-danger">Incorrect email or password. Try again.</span>
+                        <button class="btn btn-primary">Try Again!</button>
+                    </div>
+                    <div class="code__wrapper">
+                        <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <div class="input-form">
+                                        <label class="label" for="email">Email ID</label>
+                                        <input type="text" name="email" class="input-error" placeholder="Enter email id">
+                                        <label class="label" for="password">Password<span class="red">*</span></label>
+                                        <input type="password" name="password" class="input-error" placeholder="Enter password" required>
+                                        <span class="alert alert-danger">Incorrect email or password. Try again.</span>
+                                        <button class="btn btn-primary">Try Again!</button>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
                     </div>
                 </div>
 
                 <div class="component__variant">
-                    <h3 class="component__variant__title">Read only form fields</h3>
+                    <h3 class="variant__title">Form validation for check pass</h3>
                     <p class="variant__desc">To use this component, use the keyword <span
-                            class="highlight">readonly</span> in the html input tag and add class <span
-                            class="highlight">readonly.</span></p>
-                    <div class="component__container">
-                        <div class="input-form">
-                            <label class="label" for="email">Email Id</label>
-                            <input type="email" name="email" value="muskanbagrecha04@gmail.com" class="input-readonly" readonly required>
-                            <label class="label" for="password">Password<span class="red">*</span></label>
-                            <input type="password" name="password" placeholder="Enter password" required>
-                            <button class="btn btn-primary">Log in!</button>
-                        </div>                    
+                            class="highlight">input-success
+                            and alert-success to display alert message.</span></p>
+
+                    <div class="input-form">
+                        <label class="label" for="password">Password</label>
+                        <input type="password" name="password" class="input-success" value="********" placeholder="Enter password"
+                            required>
+                        <span class="alert alert-success">Strong password.</span>
+                        <button class="btn btn-primary">Confirm Password</button>
                     </div>
+
                     <div class="code__wrapper">
-                        <div class="iframe__code">
-                        </div>
+                        <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <div class="input-form">
+                                        <label class="label" for="password">Password<span class="red">*</span></label>
+                                        <input type="password" name="password" class="input-success" placeholder="Enter password" required>
+                                        <span class="alert alert-success">Strong password.</span>
+                                        <button class="btn btn-primary">Confirm Password</button>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
                     </div>
                 </div>
-
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Read only form fields</h3>
-                    <p class="variant__desc">To use this component, use the keyword <span
-                            class="highlight">readonly</span> in the html input tag and add class <span
-                            class="highlight">readonly.</span></p>
-                    <div class="component__container">
-                        <div class="input-form">
-                            <label class="label" for="email">Email Id</label>
-                            <input type="email" name="email" value="muskanbagrecha04@gmail.com" class="input-readonly" readonly required>
-                            <label class="label" for="password">Password<span class="red">*</span></label>
-                            <input type="password" name="password" placeholder="Enter password" required>
-                            <button class="btn btn-primary">Log in!</button>
-                        </div>                    
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe__code">
-                        </div>
-                    </div>
-                </div>
-
-                div.
 
             </section>
         </div>
@@ -136,7 +205,8 @@
         </button>
 
         <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+        <script src="js/prism.js"></script>
+        <script src="js/app.js"></script>
     </div>
 </body>
 

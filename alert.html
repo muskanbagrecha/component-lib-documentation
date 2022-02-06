@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram</title>
+
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,22 +16,22 @@
         rel="stylesheet">
 
     <!-- Linking CSS -->
+        
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet"/>
 
     <!--Component Library-->
     <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
-    <link href="css/prism.css" rel="stylesheet" /> 
-
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alert</title>
 </head>
 
 <body>
     <div class="documentation__container">
 
+        <!-- primary navbar -->
         <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
@@ -39,8 +42,10 @@
                 <i class="fa fa-moon theme-icon"></i>
             </nav>
         </header>
+        <!-- primary navbar ends -->
 
-        <div class="documentation__navigation">
+        <!-- Component navigation -->
+        <nav class="documentation__navigation">
             <ul class="documentation__navigation__list">
                 <li><a href="#">Alert</a></li>
                 <li><a href="avatar.html">Avatar</a></li>
@@ -49,130 +54,197 @@
                 <li><a href="card.html">Card</a></li>
                 <li><a href="input.html">Input</a></li>
             </ul>
-        </div>
+        </nav>
+        <!-- Component navigation ends -->
 
-        <div class="documentation__content">
-            <section class="component">
-                <h1 class="large-title" style="text-align: initial;">Alert</h1>
-                <div class="component__desc">
-                    <p>Alerts are used to <span class="highlight">notify the user of an important event or
-                            action.</span> It can prompt users to take a specific action and can also be dismissed.
-                    </p>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">Alerts without action</h3>
-                    <p class="variant__desc">Alerts can be created using the <span class="highlight">alert</span> class.
-                        There are 6 variants available for alerts. The variants include: <span
-                            class="highlight">success, danger, warning, info, secondary, themed, outlined.</span>You can
-                        specify minimum and maximum width of the alerts as per your use-case.</p>
-                    <div class="component__container">
-                        <div class="alert alert-success">
-                            <span><i class="fas fa-check-circle"></i></span>
-                            Payment successful!
-                        </div>
-                        <div class="alert alert-danger">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            Payment failed! Please try later.
-                        </div>
-                        <div class="alert alert-warning">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is a warning!
-                        </div>
-                        <div class="alert alert-info">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is an informative alert!
-                        </div>
-                        <div class="alert alert-themed">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is a themed alert!
-                        </div>
-                        <div class="alert alert-secondary">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is a secondary alert!
-                        </div>
+        <!-- Component -->
+        <main class="documentation__content">
+            
+            <h1 class="large-title">Alert</h1>
+            <p class="component__desc">Alerts are used to <span class="highlight">notify the user of an important event or action.</span> It can prompt users to take a specific action and can also be dismissed. </p>
+
+            <!-- Regular alerts -->
+            <section class="component__variant">
+                <h3 class="variant__title">Alerts without action</h3>
+                <p class="variant__desc">Alerts can be created using the <span class="highlight">alert</span> class.
+                    There are 6 variants available for alerts. The variants include: <span class="highlight">success,
+                        danger, warning, info, secondary, themed, outlined.</span>You can specify minimum and maximum
+                    width of the alerts as per your use-case.</p>
+                <div class="bordered-container">
+                    <div class="alert alert-success">
+                        <span><i class="fas fa-check-circle"></i></span>
+                        Payment successful!
                     </div>
-                    <div class="code__wrapper">
-                        <code class="iframe_code">
-                            <iframe src="https://carbon.now.sh/embed/dm3FxrmooiC2NqE8Ss6B"
-                                style="width: 100%; height: 300px; border:0; transform: scale(1); overflow:scroll;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
+                    <div class="alert alert-danger">
+                        <span><i class="fas fa-exclamation-circle"></i></span>
+                        Payment failed! Please try later.
+                    </div>
+                    <div class="alert alert-warning">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is a warning!
+                    </div>
+                    <div class="alert alert-info">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is an info!
+                    </div>
+                    <div class="alert alert-themed">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is a themed alert!
+                    </div>
+                    <div class="alert alert-secondary">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is a secondary alert!
+                    </div>
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="alert alert-success">
+                                    <span><i class="fas fa-check-circle"></i></span>
+                                    Payment successful!
+                                </div>
+
+                                <div class="alert alert-danger">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    Payment failed! Please try later.
+                                </div>
+
+                                <div class="alert alert-warning">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is a warning!
+                                </div>
+
+                                <div class="alert alert-info">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is an informative alert!
+                                </div>
+
+                                <div class="alert alert-themed">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is a themed alert!
+                                </div>
+
+                                <div class="alert alert-secondary">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is a secondary alert!
+                                </div>
+                            </script>
                         </code>
-                    </div>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">
-                        Alerts with close button
-                    </h3>
-                    <p class="component__desc">Alerts can be dismissed by clicking on the <span class=highlight>close
-                            button.</span> Just add
-                        class <span class="highlight">component-close</span> to activate this functionality. Note that
-                        dismiss button or icon should have class <span class="highlight">icon-close.</span> Refer to the
-                        code for more clarity.</p>
-                    <div class="component__container-borderless">
-                        <div class="alert alert-success component-close">
-                            <span><i class="fas fa-check-circle"></i></span>
-                            This is a success alert!
-                            <i class="icon-close fa fa-close"></i>
-                        </div>
-                    </div>
-                    <div class="code__wrapper" style="margin-bottom: 2rem;">
-                        <div class="iframe__code">
-                            <iframe src="https://carbon.now.sh/embed/tuypl0KDUzNZP8PlbtZj"
-                                style="width: 100%; height: 177px; overflow-x:auto;border:none"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
-                    <div class="code__wrapper">
-                        <code class="iframe_code">
-                            <iframe src="https://carbon.now.sh/embed/IKpvGug5s3clioqSWlQD"
-                                style="width: 100%; height: 223px; border:0; transform: scale(1); overflow-x: auto;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </code>
-                    </div>
-                </div>
-                <div class="component__variant">
-                    <h3 class="component__variant__title">
-                        Outlined Alerts
-                    </h3>
-                    <p class="variant__desc">You can use outlined variants by adding <span
-                            class="highlight">alert-outlined</span> class to existing classes.</span>
-                    </p>
-                    <div class="component__container-borderless">
-                        <div class="alert alert-themed alert-outlined">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is an outlined themed alert!
-                            <span class="component-close">                            <i class="icon-close fa fa-close"></i>
-                            </span>
-                        </div>
-                        <div class="alert alert-info alert-outlined">
-                            <span><i class="fas fa-exclamation-triangle"></i></span>
-                            This is an outlined alert!
-                        </div>
-                    </div>
-                    <div class="code__wrapper">
-                        <div class="iframe_code">
-                            <iframe src="https://carbon.now.sh/embed/jtmOYaZtPdb3A2KlnzlY"
-                                style="width: 100%; height: 241px; border:0; transform: scale(1); overflow-x:hidden;"
-                                sandbox="allow-scripts allow-same-origin">
-                            </iframe>
-                        </div>
-                    </div>
+                    </pre>
                 </div>
             </section>
-        </div>
 
-        <footer class="documentation__footer">
+            <!-- Regular Alerts with close button-->
+            <section class="component__variant">
+
+                <h3 class="variant__title">
+                    Alerts with close button
+                </h3>
+
+                <p class="variant__desc">Alerts can be dismissed by clicking on the <span class=highlight>close
+                        button.</span> Just add class <span class="highlight">component-close</span> to activate this
+                    functionality. Note that dismiss button or icon should have class <span
+                        class="highlight">icon-close.</span> Refer to the code for more clarity.</p>
+
+                <div class="borderless-container">
+                    <div class="alert alert-success component-close">
+                        <span><i class="fas fa-check-circle"></i></span>
+                        This is a success alert!
+                        <i class="icon-close fa fa-close"></i>
+                    </div>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="alert alert-success component-close">
+                                    <span><i class="fas fa-check-circle"></i></span>
+                                    This is a success alert!
+                                    <i class="icon-close fa fa-close"></i>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-javascript">
+                            <script type="prism-javascript">
+                                const elements = document.querySelectorAll(".alert-dismissable");
+                                for (let i = 0; i < elements.length; i++) {
+                                    elements[i].addEventListener("click", (e) => {
+                                        if (e.target.classList.contains("fa-close")) {
+                                            e.target.parentElement.style.display = "none";
+                                        }
+                                    });
+                                }
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Outlined alerts -->
+            <section class="component__variant">
+                <h3 class="variant__title">
+                    Outlined Alerts
+                </h3>
+                <p class="variant__desc">You can use outlined variants by adding <span
+                        class="highlight">alert-outlined</span> class to existing classes.</span>
+                </p>
+                <div class="borderless-container">
+                    <div class="alert alert-themed alert-outlined">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is an outlined themed alert!
+                        <span class="component-close"> <i class="icon-close fa fa-close"></i>
+                        </span>
+                    </div>
+                    <div class="alert alert-info alert-outlined">
+                        <span><i class="fas fa-exclamation-triangle"></i></span>
+                        This is an outlined alert!
+                    </div>
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="alert alert-themed alert-outlined">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is an outlined themed alert!
+                                    <span class="component-close"> <i class="icon-close fa fa-close"></i>
+                                    </span>
+                                </div>
+
+                                <div class="alert alert-info alert-outlined">
+                                    <span><i class="fas fa-exclamation-triangle"></i></span>
+                                    This is an outlined alert!
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+        </main>
+        <!-- Component ends -->
+
+        <!-- Footer -->
+        <footer class="footer">
             <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
             <ul class="footer__list">
                 <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li>
                 <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
             </ul>
+            <p class="copyright">© Fashgram'22</p>
         </footer>
+        <!-- Footer ends -->
+
     </div>
 
     <button class="btn-floating float-on-screen bottom-right doc-float">
@@ -180,8 +252,8 @@
     </button>
 
     <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
-    <script src="scripts/prism.js"></script> <!-- syntax highlighting -->
-    <script src="app.js"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
