@@ -37,7 +37,7 @@
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
                     <li><a href="installation.html"><span>02</span>Installation</a></li>
-                    <li class="active"><a href="#"><span>03</span>Documentation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
                 </ul>
 
                 <!-- icons -->
@@ -79,42 +79,25 @@
         <!-- Component starts -->
         <main class="documentation__content">
 
-            <h1 class="large-title">Typography</h1>
+            <h1 class="large-title">Ratings</h1>
             <p class="component__desc">
-                A consistent typography system for your website.
+                Ratings are used to show the user the rating of a product or service.
             </p>
 
-            <!-- Headings -->
+            <!-- Read only ratings -->
             <section class="component__variant">
-                <h3 class="variant__title">Headings</h3>
+                <h3 class="variant__title">Read-only ratings</h3>
                 <p class="variant__desc">
-                    You can use headings tags or class names to style your headings. Please keep semantics in mind while using the heading styles. 
+                    Read-only ratings are used to show the user the rating of a product or service.
                 </p>
 
-                <div class="bordered-container">
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
-                </div>
-
-                <div class="bordered-container">
-                    <div class="h1">Div Heading 1</div>
-                    <div class="h2">Div Heading 2</div>
-                    <div class="h3">Div Heading 3</div>
-                    <div class="h4">Div Heading 4</div>
-                    <div class="h5">Div Heading 5</div>
-                    <div class="h6">Div Heading 6</div>
-                </div>
-
-                <div class="bordered-container">
-                    <div class="large-title">
-                        Large Title
-                    </div>
-                    <div class="medium-title">
-                        Medium Title
+                <div class="bordered-container flex-row-wrap">
+                    <div class="rating static-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
                     </div>
                 </div>
 
@@ -122,91 +105,81 @@
                     <pre>
                         <code class="language-markup">
                             <script type="prism-html-markup">
-                                <h1>Heading 1</h1>
-                                <h2>Heading 2</h2>
-                                <h3>Heading 3</h3>
-                                <h4>Heading 4</h4>
-                                <h5>Heading 5</h5>
-                                <h6>Heading 6</h6>
-
-                                <div class="h1">Div Heading 1</div>
-                                <div class="h2">Div Heading 2</div>
-                                <div class="h3">Div Heading 3</div>
-                                <div class="h4">Div Heading 4</div>
-                                <div class="h5">Div Heading 5</div>
-                                <div class="h6">Div Heading 6</div>
-
-                                <div class="large-title">
-                                    Large Title
+                                <div class="rating static-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
                                 </div>
-
-                                <div class="medium-title">
-                                    Medium Title
-                                </div>
-                            </script>
-                        </code>
-                    </pre>
-                </div>
-
-            </section>
-
-            <!-- Text Alignment -->
-            <section class="component__variant">
-                <h3 class="variant__title">Text Alignment</h3>
-                <p class="variant__desc">
-                    You can use text alignment classes to align your text.
-                </p>
-
-                <div class="bordered-container">
-                    <p class="left-text">Left-aligned text!</p>
-                    <p class="center-text">Center-aligned text!</p>
-                    <p class="right-text">Right-aligned text!</p>
-                </div>
-
-                <div class="code__wrapper">
-                    <pre>
-                        <code class="language-markup">
-                            <script type="prism-html-markup">
-                                <p class="left-text">Left-aligned text!</p>
-                                <p class="center-text">Center-aligned text!</p>
-                                <p class="right-text">Right-aligned text!</p>
                             </script>
                         </code>
                     </pre>
                 </div>
             </section>
 
-            <!-- Additional Styling -->
+            <!-- Interactive Ratings -->
             <section class="component__variant">
-                <h3 class="variant__title">Additional Utilities</h3>
+                <h3 class="variant__title">Interactive ratings</h3>
                 <p class="variant__desc">
-                    You can use additional utilities to style your text.
+                    Interactive ratings allow users to rate a product or service.
                 </p>
 
-                <div class="bordered-container">
-                    <h1 class="large-title">Large Title</h1>
-                    <p class="medium-title">Medium Title</p>
-                    <p class="italic-text">Italic text!</p>
-                    <p class="bold-text">Bold text!</p>
-                    <p class="underline-text">Underline text!</p>
-                    <p class="strike-text">Strikethrough text!</p>
-                    <p class="highlight">Highlight!</p>
-                    <p class="gray-text">Gray text!</p>
-                    <p class="red-text">Red text!</p>
+                <div class="bordered-container flex-row-wrap">
+                    <div class="rating interactive-rating">
+                        <div class="stars">
+                            <input type="radio" name="rate" id="rating-5">
+                            <label for="rating-5" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rating-4">
+                            <label for="rating-4" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rating-3">
+                            <label for="rating-3" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rating-2">
+                            <label for="rating-2" class="fas fa-star"></label>
+
+                            <input type="radio" name="rate" id="rating-1">
+                            <label for="rating-1" class="fas fa-star"></label>
+                        </div>
+
+                        <form action="#">
+                            <div class="btn">
+                                <button type="submit" class="btn btn-small btn-outline">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="code__wrapper">
                     <pre>
                         <code class="language-markup">
                             <script type="prism-html-markup">
-                                <h1 class="large-title">Large Title</h1>
-                                <p class="italic-text">Italic text!</p>
-                                <p class="bold-text">Bold text!</p>
-                                <p class="underline-text">Underline text!</p>
-                                <p class="strike-text">Strikethrough text!</p>
-                                <p class="highlight">Highlight!</p>
-                                <p class="gray-text">Gray text!</p>
-                                <p class="red-text">Red text!</p>
+                                <div class="rating interactive-rating">
+                                    <div class="stars">
+                                        <input type="radio" name="rate" id="rating-5">
+                                        <label for="rating-5" class="fas fa-star"></label>
+                            
+                                        <input type="radio" name="rate" id="rating-4">
+                                        <label for="rating-4" class="fas fa-star"></label>
+                            
+                                        <input type="radio" name="rate" id="rating-3">
+                                        <label for="rating-3" class="fas fa-star"></label>
+                            
+                                        <input type="radio" name="rate" id="rating-2">
+                                        <label for="rating-2" class="fas fa-star"></label>
+                            
+                                        <input type="radio" name="rate" id="rating-1">
+                                        <label for="rating-1" class="fas fa-star"></label>
+                                    </div>
+                            
+                                    <form action="#">
+                                        <div class="btn">
+                                            <button type="submit" class="btn btn-small btn-outline">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </script>
                         </code>
                     </pre>
