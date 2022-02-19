@@ -14,18 +14,7 @@ themeIcon.onclick = () => {
     }
 }
 
-/* JS for closing alert */
-
-// const elements = document.querySelectorAll(".alert-dismissable");
-// for (let i = 0; i < elements.length; i++) {
-//     elements[i].addEventListener("click", (e) => {
-//         if (e.target.classList.contains("fa-close")) {
-//             e.target.parentElement.style.display = "none";
-//         }
-//     });
-// }
-
-/* JS for closing cards */
+/* JS for closing components */
 const elements = document.querySelectorAll(".component-close");
 for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener("click", (e) => {
@@ -34,7 +23,6 @@ for (let i = 0; i < elements.length; i++) {
 }
 
 /*Smooth scrolling */
-
 const scrollButton = document.querySelector(".doc-float");
 scrollButton.addEventListener("click", (e) => {
     // e.preventDefault();
