@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking CSS -->
+
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+    <!--Placeholder for Component Library-->
+    <link id="active-stylesheet" href="" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="documentation__container">
+
+        <!-- primary navbar -->
+        <header class="primary-header" id="top-section">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+
+                <!-- icons -->
+                <div class="icons">
+
+                    <!-- Burger -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <!-- Theme icon -->
+                    <div class="theme">
+                        <button class="theme-toggle"
+                            data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- primary navbar ends -->
+
+        <!-- Component navigation -->
+
+        <nav class="navigation navigation-full documentation__navigation">
+            <!-- menu -->
+            <ul class="nav-list">
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="rating.html">Ratings</a></li>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="toast.html">Toast</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Component -->
+        <main class="documentation__content">
+
+            <h1 class="large-title">Grid Layout</h1>
+            <p class="component__desc">A grid layout can be used to break down your layout into sections.</p>
+
+            <!-- 50-50 Grid -->
+            <section class="component__variant">
+                <h3 class="variant__title">Grid: 50-50</h3>
+                <p class="variant__desc">This layout can be used to view two sections side by side such that they take
+                    up equal width.</p>
+
+                <div class="bordered-container">
+                    <div class="grid-50-50">
+                        <div class="left-content">
+                            <img class="img-responsive"
+                                src="./assets/makeup.jpg"
+                                alt="grid-img">
+                        </div>
+                        <div class="right-content text-container">
+                            <h3>Combo Packs</h3>
+                            <h5>Starting At Rs. 1,799</h5>
+                            <a class="btn btn-outline">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="bordered-container">
+                                    <div class="grid-50-50">
+                                        <div class="left-content img-container">
+                                            <img class="img-responsive" src"...">
+                                        </div>
+                                        <div class="right-content flex-column-center">
+                                            <h3>Combo Packs</h3>
+                                            <h5>Starting At Rs. 11,799</h5>
+                                            <div class="CTA-Container">
+                                                <a class="btn btn-outline">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- 70-30 Grid -->
+            <section class="component__variant">
+                <h3 class="variant__title">Grid: 70-30</h3>
+                <p class="variant__desc">This layout can be used to view two sections in 70% and 30% proportions.</p>
+
+                <div class="bordered-container">
+                    <div class="grid-70-30">
+                        <div class="left-content text-container">
+                            <h3>Spring Sale</h3>
+                            <h5>Starting At Rs. 11,799</h5>
+                            <a class="btn btn-outline">Explore</a>
+                        </div>
+                        <div class="right-content">
+                            <img class="img-responsive" src="./assets/grid-dress.jpg" alt="grid-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <div class="bordered-container">
+                                    <div class="grid-50-50">
+                                        <div class="left-content img-container">
+                                            <img class="img-responsive" src"...">
+                                        </div>
+                                        <div class="right-content flex-column-center">
+                                            <h3>Spring Sale</h3>
+                                            <h5>Starting At Rs. 11,799</h5>
+                                            <div class="CTA-Container">
+                                                <a class="btn btn-outline">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+
+        </main>
+        <!-- Component ends -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="copyright">© Fashgram'22</p>
+        </footer>
+        <!-- Footer ends -->
+
+    </div>
+
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

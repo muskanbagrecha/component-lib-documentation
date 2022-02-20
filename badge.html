@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Linking CSS -->
+
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+    <!--Placeholder for Component Library-->
+    <link id="active-stylesheet" href="" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <div class="documentation__container">
+
+        <!-- primary navbar -->
+        <header class="primary-header" id="top-section">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+
+                <!-- icons -->
+                <div class="icons">
+
+                    <!-- Burger -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <!-- Theme icon -->
+                    <div class="theme">
+                        <button class="theme-toggle"
+                            data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- primary navbar ends -->
+
+        <!-- Component navigation -->
+
+        <nav class="navigation navigation-full documentation__navigation">
+            <!-- menu -->
+            <ul class="nav-list">
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="rating.html">Ratings</a></li>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="toast.html">Toast</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Component starts -->
+        <main class="documentation__content">
+
+            <h1 class="large-title">Badges</h1>
+            <p class="component__desc">Badges can be used to relay some information. For example, a status badge can be
+                used to indicate whether a user is online or offline.</p>
+
+            <!-- Status badges -->
+            <div class="component__variant">
+
+                <h3 class="variant__title">Status badge on Avatars</h3>
+                <p class="variant__desc">Status badge indicates whether the user is <span class="highlight">online,
+                        offline or away.</span></p>
+
+                <div class="bordered-container flex-row-wrap">
+
+                    <div class="avatar avatar-xl">
+                        <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        <span class="badge status-online"></span>
+                    </div>
+                    <div class="avatar avatar-l avatar-text ">
+                        <span class="badge status-online"></span>
+                        <span class="text">MB</span>
+                    </div>
+                    <div class="avatar avatar-m">
+                        <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        <span class="badge status-away"></span>
+                    </div>
+                    <div class="avatar avatar-s avatar-text ">
+                        <span class="badge status-away"></span>
+                        <span class="text">MB</span>
+                    </div>
+                    <div class="avatar avatar-xs">
+                        <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        <span class="badge status-offline"></span>
+                    </div>
+
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+
+                                <div class="avatar avatar-xl">
+                                    <img src="..." alt="avatar-img" class="img-responsive img-rounded">
+                                    <span class="badge status-online"></span>
+                                </div>
+            
+                                <div class="avatar avatar-l avatar-text ">
+                                    <span class="text">MB</span>
+                                    <span class="badge status-online"></span>
+                                </div>
+            
+                                <div class="avatar avatar-m">
+                                    <img src="..." alt="avatar-img" class="img-responsive img-rounded">
+                                    <span class="badge status-away"></span>
+                                </div>
+            
+                                <div class="avatar avatar-s avatar-text ">
+                                    <span class="text">MB</span>
+                                    <span class="badge status-away"></span>
+                                </div>
+            
+                                <div class="avatar avatar-xs">
+                                    <img src="..." alt="avatar-img" class="img-responsive img-rounded">
+                                    <span class="badge status-offline"></span>
+                                </div>
+
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <!-- Edit badges -->
+            <div class="component__variant">
+
+                <h3 class="variant__title">Edit badge on avatars</h3>
+                <p class="variant__desc">Edit badge can be used to provide an option to <span class="highlight">change
+                        the avatar.</span></p>
+
+                <div class="bordered-container flex-row-wrap">
+
+                    <div class="avatar avatar-xl avatar-text ">
+                        <span class="text">MB</span>
+                        <span class="badge badge-avatar badge-notification">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                    </div>
+
+                    <div class="avatar avatar-l">
+                        <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        <span class="badge badge-avatar badge-notification">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                    </div>
+
+                    <div class="avatar avatar-m avatar-text ">
+                        <span class="text">MB</span>
+                        <span class="badge badge-avatar badge-notification">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                    </div>
+
+                    <div class="avatar avatar-s">
+                        <img src="assets/avatar1.png" alt="avatar-img" class="img-responsive img-rounded">
+                        <span class="badge badge-avatar badge-notification">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                    </div>
+
+                    <div class="avatar avatar-xs avatar-text ">
+                        <span class="text">MB</span>
+                        <span class="badge badge-avatar badge-notification">
+                            <i class="fa fa-pencil"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+
+                                <div class="avatar avatar-xl avatar-text ">
+                                    <span class="text">MB</span>
+                                    <span class="badge badge-avatar badge-notification">
+                                        <i class="fa fa-pencil"></i>
+                                    </span>
+                                </div>
+            
+                                <div class="avatar avatar-l">
+                                    <img src="..." alt="avatar-img" class="img-responsive img-rounded">
+                                    <span class="badge badge-avatar badge-notification">
+                                        <i class="fa fa-pencil"></i>
+                                    </span>
+                                </div>
+            
+                                <div class="avatar avatar-m avatar-text ">
+                                    <span class="text">MB</span>
+                                    <span class="badge badge-avatar badge-notification">
+                                        <i class="fa fa-pencil"></i>
+                                    </span>
+                                </div>
+            
+                                <div class="avatar avatar-s">
+                                    <img src="..." alt="avatar-img" class="img-responsive img-rounded">
+                                    <span class="badge badge-avatar badge-notification">
+                                        <i class="fa fa-pencil"></i>
+                                    </span>
+                                </div>
+            
+                                <div class="avatar avatar-xs avatar-text ">
+                                    <span class="text">MB</span>
+                                    <span class="badge badge-avatar badge-notification">
+                                        <i class="fa fa-pencil"></i>
+                                    </span>
+                                </div>
+
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+            <!-- Badge on icons -->
+            <div class="component__variant">
+
+                <h3 class="variant__title">Badge on icons</h3>
+                <p class="variant__desc">Badge can be used on icons to indicate the number of <span
+                        class="highlight">notifications</span></p>
+
+
+                <div class="bordered-container flex-row-wrap">
+
+                    <div class="icon-badge-container">
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                            <span class="badge badge-icon badge-notification">1</span>
+                        </a>
+                    </div>
+
+                    <div class="icon-badge-container">
+                        <a href="#">
+                            <i class="fa fa-envelope"></i>
+                            <span class="badge badge-icon badge-notification">3</span>
+                        </a>
+                    </div>
+
+                    <div class="icon-badge-container">
+                        <a href="#">
+                            <i class="fa fa-comments"></i>
+                            <span class="badge badge-icon badge-notification">6</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+
+                                <div class="icon-badge-container">
+                                    <a href="#">
+                                        <i class="fas fa-bell"></i>
+                                        <span class="badge badge-icon badge-notification">1</span>
+                                    </a>
+                                </div>
+            
+                                <div class="icon-badge-container">
+                                    <a href="#">
+                                        <i class="fa fa-envelope"></i>
+                                        <span class="badge badge-icon badge-notification">3</span>
+                                    </a>
+                                </div>
+            
+                                <div class="icon-badge-container">
+                                    <a href="#">
+                                        <i class="fa fa-comments"></i>
+                                        <span class="badge badge-icon badge-notification">6</span>
+                                    </a>
+                                </div>
+
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+            </div>
+
+        </main>
+        <!-- End of component -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="copyright">© Fashgram'22</p>
+        </footer>
+        <!-- Footer ends -->
+
+    </div>
+
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

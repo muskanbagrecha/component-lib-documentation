@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashgram</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking CSS -->
+
+    <!-- Prism CSS -->
+    <link href="css/prism.css" rel="stylesheet" />
+
+    <!--Placeholder for Component Library-->
+    <link id="active-stylesheet" href="" rel="stylesheet" type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="documentation__container">
+
+        <!-- primary navbar -->
+        <header class="primary-header" id="top-section">
+            <nav class="navbar">
+                <ul class="primary-navigation tab-underline-indicator">
+                    <li><a href="index.html"><span>01</span>Home</a></li>
+                    <li><a href="installation.html"><span>02</span>Installation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
+                </ul>
+
+                <!-- icons -->
+                <div class="icons">
+
+                    <!-- Burger -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <!-- Theme icon -->
+                    <div class="theme">
+                        <button class="theme-toggle"
+                            data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- primary navbar ends -->
+
+        <!-- Component navigation -->
+
+        <nav class="navigation navigation-full documentation__navigation">
+            <!-- menu -->
+            <ul class="nav-list">
+                <li><a href="alert.html">Alert</a></li>
+                <li><a href="avatar.html">Avatar</a></li>
+                <li><a href="badge.html">Badge</a></li>
+                <li><a href="button.html">Button</a></li>
+                <li><a href="card.html">Card</a></li>
+                <li><a href="grid.html">Grid</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="input.html">Input</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="modal.html">Modal</a></li>
+                <li><a href="navigation.html">Navigation</a></li>
+                <li><a href="rating.html">Ratings</a></li>
+                <li><a href="slider.html">Slider</a></li>
+                <li><a href="toast.html">Toast</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+
+        </nav>
+        <!-- Component navigation ends -->
+
+        <main class="documentation__content">
+            <h1 class="large-title">Button</h1>
+            <p class="component__desc">
+                The button component can be used to <span class="highlight"> trigger an action. </span> This
+                component library supports multiple variants of buttons which can be customized easily.
+            </p>
+
+            <!-- Primary buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Primary Buttons</h3>
+                <p class="variant__desc">You can use primary buttons by adding class <span class="highlight">btn.
+                    </span> You may use the button element or anchor tag (with text or icon). </p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-primary">Click me</button>
+                    <button class="btn btn-primary">
+                        <i class="icon fas fa-shopping-cart"></i>
+                        <span>Add to cart</span>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="icon fas fa-heart"></i>
+                        <span>Wishlist</span>
+                    </button>
+                    <a class="btn-link-text">Primary-Text</a>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-primary">Click me</button>
+
+                                    <button class="btn btn-primary">
+                                        <i class="icon fas fa-shopping-cart"></i>
+                                        <span>Add to cart</span>
+                                    </button>
+
+                                    <button class="btn btn-outline">
+                                        <i class="icon fas fa-heart"></i>
+                                        <span>Wishlist</span>
+                                    </button>
+
+                                    <a class="btn-link-text">Primary-Text</a>
+                                </script>
+                            </code>
+                        </pre>
+                </div>
+            </section>
+
+            <!-- Primary buttons with icons -->
+            <section class="component__variant">
+                <h3 class="variant__title">Primary Buttons With Icons</h3>
+                <p class="variant__desc">You can use <span class="highlight">icons</span> as primary buttons. </p>
+                <div class="bordered-container">
+                    <button class="btn btn-outline">
+                        <i class="icon fas fa-shopping-cart"></i>
+                        <span>Buy now</span>
+                    </button>
+                    <i class="btn-icon fas fa-shopping-cart"></i>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <button class="btn btn-outline">
+                                    <i class="icon fas fa-shopping-cart"></i>
+                                    <span>Buy now</span>
+                                </button>
+
+                                <i class="btn-icon fas fa-shopping-cart"></i>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Secondary containers -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Secondary Buttons</h3>
+                <p class="variant__desc">You can also use secondary buttons by adding class <span
+                        class="highlight">btn-secondary.</span></p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-secondary">Secondary</button>
+                    <button class="btn btn-secondary-outline">Privacy Agreement</button>
+                    <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-secondary">Secondary</button>
+
+                                    <button class="btn btn-secondary-outline">Privacy Agreement</button>
+
+                                    <i class="fa fa-trash btn-icon btn-icon-secondary"></i>
+                                </script>
+                            </code>
+                        </pre>
+                </div>
+
+            </section>
+
+            <!-- Buttons with different sizes -->
+            <section class="component__variant">
+                <h3 class="variant__title">
+                    Different Sizes
+                </h3>
+                <p class="variant__desc">Depending on the use-case, you can select a small or a large button. Use <span
+                        class="highlight">btn-small and .btn-large</span> to change the size.</p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-outline btn-small">Small</button>
+                    <button class="btn btn-outline btn-large">Large</button>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn btn-outline btn-small">Small</button>
+
+                                    <button class="btn btn-outline btn-large">Large</button>
+                                </script>
+                            </code>
+                    </pre>
+                </div>
+
+            </section>
+
+            <!-- Floating buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">
+                    Floating Action Buttons
+                </h3>
+                <p class="variant__desc">Floating buttons can be used to promote an <span class="highlight">important
+                        action </span>such as creating or sharing something. They are
+                    mostly used for <span class="highlight">positive actions</span> like adding something to
+                    wishlist.
+                    <ul>
+                        <li>Note that buttons can float against the parent container or the viewport. For static
+                            position, use class <span class="highlight">btn-floating.</span></li>
+                        <li>For floating with respect to the parent container, add one more class which specifies
+                            the position: <span class="highlight">top-left, top-right, bottom-left,
+                                bottom-right.</span></li>
+                        <li>For floating button with respect to viewport, add class <span
+                                class="highlight">float-on-screen.</span> For example, the button on bottom right of
+                            the screen.</li>
+                        <li>Position can be customized by overriding the positions specified in the respective
+                            class.</li>
+                    </ul>
+                </p>
+
+                <div class="bordered-container">
+                    <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button></button>
+                    <button class="btn-floating"><i class="fas fa-plus"></i></button></button>
+                </div>
+
+                <div class="code__wrapper">
+                    <pre>
+                            <code class="language-markup">
+                                <script type="prism-html-markup">
+                                    <button class="btn-floating"><i class="fas fa-shopping-cart"></i></button>
+                                    <button class="btn-floating"><i class="fas fa-plus"></i></button>
+                                </script>
+                            </code>
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Disabled buttons -->
+            <section class="component__variant">
+
+                <h3 class="variant__title">Disabled Button</h3>
+                <p class="variant__desc">You can disable buttons by adding class <span
+                        class="highlight">btn-disabled.</span></p>
+
+                <div class="bordered-container">
+                    <button class="btn btn-primary btn-disabled">Create account</button>
+                    <button class="btn btn-outline btn-disabled">Place order</button>
+                    <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
+                </div>
+                
+                <div class="code__wrapper">
+                    <pre>
+                        <code class="language-markup">
+                            <script type="prism-html-markup">
+                                <button class="btn btn-primary btn-disabled">Create account</button>
+
+                                <button class="btn btn-outline btn-disabled">Place order</button>
+
+                                <i class="btn-icon btn-disabled fas fa-shopping-cart"></i>
+                            </script>
+                        </code>
+                    </pre>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="code-symbol">&lt; / &gt;</span> by Muskan Bagrecha</p>
+            <ul class="footer__list">
+                <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en"><i class="fa fa-hashnode" aria-hidden="true"></i></a></li>
+            </ul>
+            <p class="copyright">© Fashgram'22</p>
+        </footer>
+        <!-- Footer ends -->
+
+    </div>
+
+    <button class="btn-floating float-on-screen bottom-right doc-float">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://kit.fontawesome.com/be9a255fe4.js" crossorigin="anonymous"></script>
+    <script src="js/prism.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
