@@ -20,8 +20,8 @@
     <!-- prism css -->
     <link rel="stylesheet" href="css/prism.css">
 
-    <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
+    <!--Placeholder for Component Library-->
+    <link id="active-stylesheet" href="" rel="stylesheet" type="text/css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="card.css">
@@ -32,16 +32,37 @@
 <body>
     <div class="documentation__container">
 
+        <!-- primary navbar -->
         <header class="primary-header" id="top-section">
             <nav class="navbar">
                 <ul class="primary-navigation tab-underline-indicator">
                     <li><a href="index.html"><span>01</span>Home</a></li>
                     <li><a href="installation.html"><span>02</span>Installation</a></li>
-                    <li class="active"><a href="#"><span>03</span>Documentation</a></li>
+                    <li class="active"><a href="documentation.html"><span>03</span>Documentation</a></li>
                 </ul>
-                <i class="fa fa-moon theme-icon"></i>
+
+                <!-- icons -->
+                <div class="icons">
+
+                    <!-- Burger -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <!-- Theme icon -->
+                    <div class="theme">
+                        <button class="theme-toggle"
+                            data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                </div>
             </nav>
         </header>
+        <!-- primary navbar ends -->
 
 
         <nav class="navigation navigation-full documentation__navigation">

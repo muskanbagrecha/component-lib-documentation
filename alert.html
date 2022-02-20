@@ -20,8 +20,9 @@
     <!-- Prism CSS -->
     <link href="css/prism.css" rel="stylesheet" />
 
-    <!--Component Library-->
-    <link class="themestyle" rel="stylesheet" href="https://card-input.netlify.app/darktheme.css">
+    <!--Placeholder for Component Library-->
+    <link id="active-stylesheet" href="" rel="stylesheet" type="text/css" />
+
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
@@ -51,7 +52,12 @@
                     </div>
 
                     <!-- Theme icon -->
-                    <i class="fa fa-moon theme-icon"></i>
+                    <div class="theme">
+                        <button class="theme-toggle"
+                            data-stylesheet="https://deploy-preview-5--card-input.netlify.app/lighttheme.css">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                        </button>
+                    </div>
 
                 </div>
             </nav>

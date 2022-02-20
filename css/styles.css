@@ -4,6 +4,22 @@ html {
     scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar,
+.code__wrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+body::-webkit-scrollbar-track,
+.code__wrapper::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);     
+}
+
+body::-webkit-scrollbar-thumb,
+.code__wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(var(--color-primary-values), 0.5);    
+}
+
 /* Utility Classes */
 
 .flex-row-wrap {
@@ -102,10 +118,14 @@ html {
 
 }
 
-.theme-icon {
+.theme-toggle{
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.theme-toggle i {
     width: 3rem;
-    margin-left: auto;
     color: var(--color-complementary);
 }
 
@@ -168,18 +188,21 @@ footer {
 /* Installation */
 .installation-container{
     height: 100vh;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 15% 1fr 15%;
-    grid-template-rows: 4.5rem 1fr auto;
-    grid-template-areas: "nav nav nav"
-                        ". installcontent ."
-                        "footer footer footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "nav"
+                        "installcontent"
+                        "footer";
 }
 
 .installation-content{
     grid-area: installcontent;
     display: flex;
     flex-direction: column;
+    width: 80%;
+    max-width: 75rem;
+    margin: 0 auto;
 }
 
 .footer{
@@ -198,24 +221,6 @@ footer {
     border-radius: var(--bradius-small);
     margin: 2rem 0;
 }
-
-/* Scrollbar for code snippets */
-
-.code__wrapper::-webkit-scrollbar {
-    width: 10px;               
-  }
-
-.code__wrapper::-webkit-scrollbar-track {
-    /* color of the tracking area */
-    background: rgba(156, 163, 175, 0.2)       
-}
-
-.code__wrapper::-webkit-scrollbar-thumb {
-    /* color of the scroll thumb */
-    background-color: rgba(var(--color-primary-values), 0.5);    
-    border-radius: var(--bradius-small);
-}
-
 
 .wrapper {
     display: flex;
@@ -431,8 +436,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .installation-container{
         grid-template-columns: 5% 1fr 5%;
     }
-}
+} */
